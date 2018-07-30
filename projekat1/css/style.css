@@ -1,0 +1,190 @@
+body { 
+	width: 1000px;
+	margin: 0 auto;
+	}
+header {
+	width: 1000px;
+	height: 170px;
+	position: fixed;
+	top: 0;
+	background-image: url(https://t4.ftcdn.net/jpg/00/99/27/33/500_F_99273367_jc5YBUgCUjavRxCgcIYOm2fD4OfnjqxI.jpg);
+	background-size: 500px;
+	font-family: 'Paytone One', sans-serif;
+     font-size: 1.7em;
+     z-index: 1;
+}
+
+nav{
+	position: fixed;
+	top: 170px;
+	width: 1000px;
+	height: 50px;
+	background-color: white;
+	z-index: 1;
+}
+main {
+  display: flex;
+}
+
+/*Mobile*/
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 800px) {
+   main {
+        flex-direction: row;
+   }
+main {
+	margin-top: 220px;
+	background-image: url(https://images.pexels.com/photos/751373/pexels-photo-751373.jpeg?auto=compress&cs=tinysrgb&h=350);
+	background-size: 1550px;
+}
+section {
+	width: 100%;
+	height: 2200px;
+	background-color: blue;
+	background-image: url(https://st2.depositphotos.com/1780485/7701/i/950/depositphotos_77013873-stock-photo-synthetic-white-leather-texture-or.jpg);
+	background-size: 500px;
+}
+aside	 {
+	width: 200px;
+	height: 2200px;
+    background-color: #ffe6e6;
+ 
+}
+}
+footer{
+	width: 1000px;
+	border: 1px solid black;
+	background-color: red;
+	bottom: 0;
+	position: fixed;
+}
+#star {
+	color: white;
+	-webkit-text-stroke: 2px black;
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: 900;
+}
+#red {
+	text-align:center;
+	color: black;
+	font-size: 2em ;
+	-webkit-text-stroke: 3px black;
+	letter-spacing: 0.5em;
+}
+#grb {
+    float: left;
+    width: 150px;
+    height: 150px;   
+ }
+.lista {
+	position: relative;
+}
+
+.lista > li  {
+	display: inline-block;
+}
+		
+
+.lista > li > a {
+	display: block;
+	padding-right: 20px;
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+.klubovi {
+	position: absolute;
+}
+
+.sport {
+	display: none;
+	padding: 0;
+	z-index: 1;
+	margin-left: 197px;
+	width: 140px;
+
+}
+
+.klubovi > ul > li {
+	list-style-type: none;
+}
+
+.sport > li > a:hover {
+	color: red;
+	background-color: grey;
+}
+
+.klubovi > ul > li > a {
+	display: block;
+	font-size: 1em;
+	background-color: lightgrey;
+	position: center;
+}
+.klubovi:hover .sport {
+	display: block;
+}
+button#best {
+	margin-left: 195px;
+	margin-top: 1.2px;
+}
+.nama {
+     font-family: 'Alfa Slab One', cursive;
+}
+         #green {
+     float: right;
+}
+ .photos:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+ .photos{
+ 	width: 300px;
+ 	height: auto;
+
+ }
+#first {
+    float: left;
+}
+.button:hover {
+    background-color: grey;
+    color: red;
+}
+ #tim {
+    float: right;
+}
+ #club {
+    float: right;
+}
+#team {
+    float: right;
+}
+.tekst {
+    font-size: 1.3em;
+    font-family: 'Boogaloo', cursive;
+}
+#net {
+    float: left;
+}
+#grb1 {
+    float: left;
+    width: 130px;
+    height: 150px;   
+ }
+ #grb2 {
+    float: left;
+    width: 130px;
+    height: 150px;   
+ }
+ .ph {
+ 	width: 170px;
+ 	height: auto;
+ }
+ .sports {
+ 	font-size: 2em;
+ }
+</style>
