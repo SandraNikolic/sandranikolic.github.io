@@ -1,0 +1,222 @@
+body {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: Arial, Times, serif;
+}
+p {
+  margin-top: 2px;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 1.3em;
+  
+}
+h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 2em;
+}
+.grb {
+  width: 86px;
+  height: 86px;
+  float: left;
+}
+
+.grb img {
+  margin: 0 0;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+
+.text {
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  font-family: Impact, Charcoal, sans-serif;
+  -webkit-text-stroke: 2px black;
+
+  }
+
+header {
+  margin-left: 0;
+  height: 150px;
+  top: 0;
+  left: 0;
+  background: #d92e1f;
+  z-index: 1;
+  background-image: url(https://t4.ftcdn.net/jpg/00/99/27/33/500_F_99273367_jc5YBUgCUjavRxCgcIYOm2fD4OfnjqxI.jpg);
+}
+
+
+ul {
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+nav {
+  left: 0px;
+  background: white;
+  z-index: 1;
+}
+nav li:hover {
+  background: #f4bac8;
+}
+nav #firstList {
+  text-align: center;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  text-decoration: none;
+  color: gray;
+  padding: 12px 10px;
+  display: block;
+  cursor: pointer;
+
+}
+nav #secondList {
+  display: none;
+  width: 170px;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background: lightgray;
+}
+nav #firstList .dropdown {
+  position: relative;
+}
+
+nav #firstList .dropdown:hover #secondList {
+  display: block;
+}
+
+nav #secondList a {
+  padding: 6px 10px;
+  border-bottom: 1px solid black;
+}
+
+section {
+  
+  padding: 20px;
+  margin-left: 4px;
+  text-align: justify;
+  line-height: 120%;
+  
+}
+section img:hover {
+  opacity: .5;
+
+}
+
+.firstImg {
+  float: right;
+  margin-left: 15px;
+}
+
+.secondImg {
+  float: left;
+  margin-right: 15px;
+}
+
+img {
+  width: 300px;
+  margin: 0 10px;
+}
+.thirdImg {
+  float: right;
+  margin-right: 15px;
+}
+.fourthImg {
+  float: left;
+  margin-right: 15px;
+}
+
+aside {
+  text-align: center;
+  //width: 100%;
+  padding-top: 25px;
+  background: #ffe6e6;  
+}
+
+aside h3 {
+  margin-left: 16px;
+}
+aside a {
+  border-radius: 5px;
+  background: lightgray;
+  display: block;
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 4px 1px;
+  margin: 14px 10px 0 10px;
+}
+
+footer {
+  height: 160px;
+  background: darkgray;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #f2a4a4;
+
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+footer a {
+  margin-top: 4px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  padding: 0 20px;
+}
+#stadion {
+  float: left;
+}
+#karte {
+  float: right;
+}
+.ph {
+  width: 170px;
+  height: auto;
+ }
+@media only screen and (min-width: 600px) {
+    nav #firstList {
+      display: flex;
+      flex-direction: row;
+    }
+    footer {
+      height: 100px;
+    }
+    h1 {
+      font-size: 3em;
+    }
+  }
+@media only screen and (min-width: 800px) {
+    main {
+      display: flex;
+      flex-direction: row;
+    }
+    aside {
+      flex: 0 0 200px;
+    }
+  .grb {
+    width: 132px;
+    height: auto;
+  }
+  nav #firstList {
+  margin-left: 400px;
+}
+h1 {
+      font-size: 4em;
+    }
+  }

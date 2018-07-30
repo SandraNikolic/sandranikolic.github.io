@@ -1,0 +1,96 @@
+@media only screen and (max-width: 1950px) {
+  div.contentt {
+    width: 800px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+}
+
+h2 {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+.contentt {
+  margin: 10px;
+  border: 2px dashed lightgray;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+}
+
+form {
+  padding: 20px;
+}
+
+#input {
+  margin: 10px 0;
+  padding: 10px 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+#button {
+  background-color: #f7383f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: black;
+}
+
+#filter {
+  margin: 10px 0;
+  padding: 10px 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+#clear {
+  background-color: #f7383f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: black;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: lightgray;
+  margin: 10px 0;
+}
+
+.oneNote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .10px 5px;
+  font-size: 1em;
+  border-top: 2px solid lightgray;
+  border-left: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+  user-select: none;
+}
+
+.oneNote:last-child {
+  border-bottom: 2px solid lightgray;
+}
+
+clearButton {
+  margin-left: 5px;
+  color: red;
+}
+
+span {
+  display: inline-block;
+  overflow: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
