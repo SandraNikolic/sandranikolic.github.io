@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Project-3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Uncial+Antiqua" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div style="margin-left:200px;" class="title">
+      OUR SPACE
+    </div>
+
+    <div id="login">
+      <div id="error"></div>
+      <input type="text" id="usernamelog" placeholder="Username" />
+      <input type="password" id="passwordlog" placeholder="Password" />
+      <button id="submit" onclick="login()">Login</button>
+    </div>
+  </header>
+
+  <div id="signupForm">
+    <h2 id="titleSignup">SIGNUP</h2>
+    <br>
+    <br>
+    <div id="success"></div>
+    <div id="errors"></div>
+    <div class="formmm">
+      <label>First Name</label>
+      <input class="sty" type="text" id="first" placeholder="Enter First Name" />
+    </div>
+    <br/>
+    <div class="formmm">
+      <label>Last Name</label>
+      <input class="sty" type="text" id="last" placeholder="Enter last name" />
+    </div>
+    <br/>
+    <div class="formmm">
+      <label>Username</label>
+      <input type="text" id="username" placeholder="Enter username" />
+    </div>
+    <br/>
+    <div class="formmm">
+      <label>Email</label>
+      <input class="sty" type="text" id="email" placeholder="Enter email" />
+    </div>
+    <br/>
+    <div id="ent" class="formmm">
+      <label>Password</label>
+      <input class="sty" type="password" id="password" placeholder="Enter password" />
+    </div>
+    <br/>
+    <div class="formmm">
+      <button type="submit" id="submit-signup" onclick="signIn()">Signup</button>
+    </div>
+  </div>
+  <script src="js/md5.min.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
+
+</html>
