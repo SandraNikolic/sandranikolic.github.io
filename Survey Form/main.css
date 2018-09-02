@@ -1,0 +1,94 @@
+body {
+    /*background: #e1daed;*/
+    background: url("https://image.freepik.com/free-photo/jelly-beans-on-both-side-of-background_23-2147717507.jpg") no-repeat 
+    center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow-y: scroll;
+  
+}
+header {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 20px;
+}
+section {
+   /*background-color:rgb(189, 235, 115);*/
+   width:900px;
+   margin-left:256px;
+   padding: 40px;
+   background: wheat;
+}
+#description {
+    font-size: 25px;
+    margin-left:110px;
+    font-family: 'Baloo Tammudu', cursive;
+    font-size: 30px;
+}
+footer {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size:40px;
+}
+#personal {
+    border: 2px solid salmon;
+    margin-bottom: 50px;
+    width:880px; 
+    padding:10px; 
+}
+h4 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    font-weight: 500px;
+}
+#number {
+    margin-left: 20px;
+    width: 156px;
+}
+#ways-shopping {
+    border: 2px solid salmon;
+    margin-bottom: 50px;
+    width:880px;
+    padding:10px;
+}
+#buying {
+    border: 2px solid salmon;
+    margin-bottom: 50px;
+    width:880px; 
+    padding:10px;
+}
+#type-shopping {
+    border: 2px solid salmon;
+    margin-bottom: 50px;
+    width:880px;
+    padding:10px;
+}
+#products {
+    border: 2px solid salmon;
+    margin-bottom: 50px;
+    width:880px;
+    padding:10px;
+}
+#products-input {
+    width: 300px;
+    height:100px;
+    resize: vertical;
+    margin-left: 300px;
+}
+#submit {
+    font-size:30px;
+    margin-left: 330px;
+    height: 60px;
+    min-width: 250px;
+    border-radius: 20%;
+    background-image: linear-gradient(-90deg, red, yellow, red);
+    font-family: 'Baloo Tammudu', cursive;
+}
+label {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+}
