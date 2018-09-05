@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Technical Documentation Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<script src="main.js">
+
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body>
+
+	<nav style="float:left;" id="navbar">
+		<header>HTML</header>
+		<ul>
+			<li>
+				<a class="nav-link" href="#OBJECTS"> OBJECTS</a>
+			</li>
+			<br/>
+				<li>
+					<a class="nav-link" href="#STRINGS">STRINGS</a>
+				</li>
+				<br/>
+					<li>
+						<a class="nav-link" href="#ARRAYS">ARRAYS</a>
+					</li>
+					<br/>
+						<li>
+							<a class="nav-link" href="#NUMBERS">NUMBERS</a>
+						</li>
+						<br/>
+							<li>
+								<a class="nav-link" href="#EVENTS">EVENTS</a>
+							</li>
+		</ul>
+	</nav>
+	<main id="main-doc">
+
+
+
+		<section id="OBJECTS" class="main-section">
+
+			<header>
+				OBJECTS
+			</header>
+
+			<p>You have already learned that JavaScript variables are containers for data values.Objects are variables too. But objects
+				can contain many values.Objects can also have methods. Methods are actions that can be performed on objects. Methods
+				are stored in properties as function definitions.In a function definition, this refers to the "owner" of function.</p>
+
+			<p>In the example above, this is the person object that "owns" the fullName function. In other words, this.firstName means
+				the firstName property of this object. Read more about the this keyword at JS this Keyword. This code assigns many values
+				(Fiat, 500, white) to a variable named car: This code assigns a simple value (Fiat) to variable:</p>
+			<code>var car = "Fiat";
+                        document.getElementById("demo").innerHTML = car;</code>
+        
+    </section>
+    <section id="STRINGS"  class="main-section">
+            <header>STRINGS</header>
+            <p>Strings are useful for holding data that can be represented in text form. Some of the most-used operations on strings are to check their length, to build and concatenate them using the + and += string operators, checking for the existence or location of substrings with the indexOf() method, or extracting substrings with the substring() method.
+                </p>
+                <p>Sometimes, your code will include strings which are very long. Rather than having lines that go on endlessly, or wrap at the whim of your editor, you may wish to specifically break the string into multiple lines in the source code without affecting the actual string contents. There are two ways you can do this.
+
+                    You can use the + operator to append multiple strings or</p>
+            <code style="margin-left:300px;">var s_prim = 'foo';
+                    var s_obj = new String(s_prim);</code>
+      
+        </section>
+        <section id="ARRAYS" class="main-section">
+                <header>ARRAYS</header>
+                <p>An array is a special variable, which can hold more than one value at a time.owever, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+
+                        The solution is an array!
+                        
+                        An array can hold many values under a single name, and you can access the values by referring to an index number.Using an array literal is the easiest way to create a JavaScript Array.</p>
+               
+        <p>You access an array element by referring to the index number.With JavaScript, the full array can be accessed by referring to the array name:Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
+
+                But, JavaScript arrays are best described as arrays.
+                
+                Arrays use numbers to access its "elements". </p>
+                <code style="margin-left:385px;">var cars = ["Saab", "Volvo", "BMW"];</code>
+            </section>
+            <section id="NUMBERS" class="main-section">
+                    <header>NUMBERS</header>
+                    <p>JavaScript has only one type of number. Numbers can be written with or without decimals.Extra large or extra small numbers can be written with scientific (exponent) notation:Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc.
+
+                            JavaScript numbers are always stored as double precision floating point numbers, following the international IEEE 754 standard. </p>
+                            <p>But in real life we usually avoid writing a long string of zeroes as it’s easy to mistype. Also, we are lazy. We will usually write something like "1bn" for a billion or "7.3bn" for 7 billion 300 million. The same is true for most large numbers.
+
+                                    In JavaScript, we shorten a number by appending the letter "e" to the number and specifying the zeroes count:</p>
+                    <code style="margin-left:320px;" >var x = 3.14;    // A number with decimals
+                            var y = 3;  </code>
+        
+                </section>
+                <section id="EVENTS" class="main-section">
+                        <header>EVENTS</header>
+                        <p>An HTML event can be something the browser does, or something a user does.
+
+                                Here are some examples of HTML events:
+                                
+                                An HTML web page has finished loading
+                                An HTML input field was changed
+                                An HTML button was clicked
+                                Often, when events happen, you may want to do something.
+                                
+                                JavaScript lets you execute code when events are detected.
+                                
+                                HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.</p>
+                        <p>Elements within a document can also be assigned event handlers. For example: ... Sometimes we want to execute a JavaScript when an event occurs, such as when a user clicks a button. Events are normally used in combination with functions, and the function will not be executed before the event occurs!Event handlers can be used to handle, and verify, user input, user actions, and browser actions:
+                            <ul style=" margin-left:360px;"><li>Things that should be done every time a page loads</li>
+                            <li>Things that should be done when the page is closed</li>
+                            <li>Action that should be performed when user clicks </li>
+                            <li>Content that should be verified when user inputs data</li>
+                                <li >And more ...</li></ul>
+                        </p>
+        <code style="margin-left:480px;">a = 5; b = 6; c = a + b;</code>
+                    </section>
+                </main>
+                <footer>
+                        <h3>Tehnical Documentation Page</h3>
+                        
+                        Tehnical Documentation Page project was made as fourth project for freeCodeCamp school. 
+                
+                    Everything here is fake, and made just for freeCodeCamp school purposes. 
+                    
+                    On these project I worked with: HTML, CSS.Text in these page is taken from 
+                    <a href="https://www.w3schools.com/">W3Schools</a> and  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN.</a>
+                    
+                        <br/>
+                        <br/>
+                       <a style="margin-left:490px;" class="contact" href="mailto:sandra93nikolic@gmail.com">My Email</a>
+                       
+                        <a class="contact" href="https://github.com/SandraNikolic"> My GitHub</a>
+                        <h2 id="signature">Sandra Nikolic</h2>     
+                </footer>
+</body>
+</html>
