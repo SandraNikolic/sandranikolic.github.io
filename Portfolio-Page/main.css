@@ -1,0 +1,177 @@
+body {
+    background: rgb(139, 206, 133);
+    background: url('images/wall4.jpg')
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+}
+.nav-link:link,
+  .nav-link:visited {
+    background-color: #bab9f7;
+    color: rgb(22, 21, 21);
+  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .nav-link:hover,
+  .nav-link:hover:active {
+    background-color: rgb(161, 242, 248);
+  }
+
+  #navbar {
+  
+   position: fixed;
+   top: 0;
+   left: 0;
+   background: #e3f8b1;
+    width: 100%;
+    height: 70px;
+
+  }
+
+  ul {
+    margin-left: 400px;
+  }
+  li {
+    display: inline;
+    font-size: 30px;
+    padding: 40px;
+    text-align: center;
+  }
+  #welcome-section {
+    height: 100vh;
+    width: 1000px;
+    margin-left:350px;
+   
+  }
+  #name {
+    font-family: 'Abril Fatface', cursive;
+    font-size:100px;
+    margin-top:150px;
+    
+  }
+  .projects {
+      padding:10px;
+      display: inline block;
+      margin: 50px 100px;
+     
+  }
+  .project-tile {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 50px;
+  
+  }
+  .picture {
+    width: 220px;
+    height: auto;
+    border-bottom: 2px solid black;
+    border: 2px solid rgb(22, 21, 22);
+    padding:10px; 
+    margin-top: 50px;
+  }
+  .title2
+  {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: black;
+  }
+  .title {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Baloo Tammudu', cursive;
+  }
+  #job {
+    text-align: center;
+    margin-right: 170px;
+  }
+  #citate {
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 180px;
+  }
+  #about {
+    width: 510px;
+    text-align: justify;
+    font-size: 18px;
+    margin-top:30px;
+    margin-left: 150px;
+  }
+  footer {
+    font-size: 18px;
+    background: #e3f8b1;
+
+  }
+  #signature {
+    font-family: 'Sacramento', cursive;
+    margin-left: 60px;
+    font-size: 40px;
+    text-align: center;
+    margin-right:100px;
+  }
+  .contact {
+    padding: 10px;
+  }
+  h3 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 30px;
+    margin-left: 550px;
+    padding-top: 10px;
+  }
+  #text {
+    margin-left: 250px;
+  }
+  #contact-details {
+    margin-top:200px;
+  }
+  .contact1 {
+    margin-left: 50px;
+  }
+  .chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 70px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f5c4f1;
+    margin-left:650px;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+#we {
+  margin-left:330px;
+}
+a {
+  text-decoration: none;
+}
+.contact {
+ background: whitesmoke;
+ color: blue;
+ font-weight: 900px;
+}
+@media only screen and (max-width: 728px) {
+  #welcome-section {
+    margin-left:0;
+  }
+  .projects{
+    margin-left:320px;
+  }
+  .title {
+    margin-left: 50px;
+  }
+ }
