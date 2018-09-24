@@ -1,0 +1,312 @@
+/* Large desktop :1920px. */
+@media only screen and (min-width : 1920px) {
+.lSAction > a.lSPrev { 
+   left: 29.1%; 
+}
+.lSAction > a.lSNext { 
+   right:29.1%; 
+}
+}
+
+/* Large desktop :1680px. */
+@media (min-width: 1680px) and (max-width:1900px) {
+.lSAction > a.lSPrev { 
+   left: 26.2%; 
+}
+.lSAction > a.lSNext { 
+   right: 26.2%; 
+}
+
+}
+
+
+/* Large desktop :1280px. */
+@media (min-width: 1280px) and (max-width: 1300px) {
+.lSAction > a.lSPrev { 
+   left: 18.7%; 
+}
+.lSAction > a.lSNext { 
+   right: 18.7%; 
+}
+
+}
+
+/* Large desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+.homepage-team-area .team-area .single-team .image-round .team-image { 
+    width: 345px !important;
+}
+
+
+}
+/* Large desktop :1170px. */
+@media (min-width: 1170px) and (max-width: 1500px) {
+.header-area .header-right ul li {width: 40px;}
+.header-area .main-menu-area ul li a {padding: 38px 17px;}
+.preview-2 .nivo-controlNav {bottom: 620px;}
+
+.homepage-team-area .team-area .single-team .image-round .team-image a img {top: -137px;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-content-area .informations ul li {margin-right: 26px;}
+.footer-top-area .single-footer .footer-social-media-area ul li {margin: 1px;}
+.footer-top-area .footer-three ul li {margin: 1px 2px;}
+.menu-page-breakfast-area .homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span, .menu-page-lunch-area .homepage-menu-area.lunch-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {left: 20% !important;top: 0px !important;}
+
+.chefs-page-area .total-team-area .single-team .image-round .team-image a img {top: -173px;}
+.header-area .header-right ul li .search-text {right: 0;}
+}
+/* Large desktop :1024px. */
+@media (min-width: 1024px) and (max-width: 1100px) {
+.lSAction > a.lSPrev { 
+   left: 10.8%; 
+}
+.lSAction > a.lSNext { 
+   right: 10.8%; 
+}
+
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+.header-area .header-right ul li {width: 40px;}
+.header-area .main-menu-area ul li a {padding: 38px 17px;}
+.preview-2 .nivo-controlNav {bottom: 620px;}
+.homepage-team-area .team-area .single-team .image-round .team-image {height: 281px;width: 280px;}
+.homepage-team-area .team-area .single-team .image-round .team-image a img {top: -137px;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-content-area .informations ul li {margin-right: 26px;}
+.footer-top-area .single-footer .footer-social-media-area ul li {margin: 1px;}
+.footer-top-area .footer-three ul li {margin: 1px 2px;}
+.menu-page-breakfast-area .homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span, .menu-page-lunch-area .homepage-menu-area.lunch-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {left: 20% !important;top: 0px !important;}
+.chefs-page-area .total-team-area .single-team .image-round .team-image {height: 260px;width: 260px;}
+.chefs-page-area .total-team-area .single-team .image-round .team-image a img {top: -173px;}
+.slider-area .slider-1 .read-more button {margin: 15px 0px;}
+.blog-page-area .all-blog-content-area .single-blog .blog-image a i {transform: translateY(-80%);}
+.header-area .header-right ul li .search-text {right: 0;}
+.header-area .header-right ul li i {padding: 38px 8px;}
+
+
+}
+
+@media only screen and (max-width : 980px) {
+.lSAction > a.lSPrev { 
+   left: 9.1%; 
+}
+.lSAction > a.lSNext { 
+   right: 9.1%; 
+}
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.container {width:750px;}
+.header-area .header-right ul li {width: 40px;}
+.header-area .main-menu-area ul li a {padding: 38px 19px;}
+.preview-2 .nivo-controlNav {  bottom: 527px;  right: 0;}
+.homepage-team-area .team-area .single-team .image-round .team-image {  height: 326px;  width: 326px;}
+.homepage-team-area .team-area .single-team .image-round .team-image a img {top: -140px;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-content-area .informations ul li {margin-right: 26px;}
+.footer-top-area .single-footer .footer-social-media-area ul li {margin: 1px;}
+.footer-top-area .footer-three ul li {margin: 1px;}
+.menu-page-breakfast-area .homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span, .menu-page-lunch-area .homepage-menu-area.lunch-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {left: 27% !important;top: 0px !important;}
+.chefs-page-area .total-team-area .single-team .image-round .team-image {height: 312px;width: 312px;}
+.chefs-page-area .total-team-area .single-team .image-round .team-image a img {top: -100px;}
+.slider-area .slider-1 .read-more button {margin: 15px 0px;}
+.blog-page-area .all-blog-content-area .single-blog .blog-image a i {transform: translateY(-80%);}
+.header-area .header-right ul li .search-text {right: 0;}
+.header-area .header-right ul li i {padding: 38px 8px;}
+.header-area .logo-area, .home-page-services-area {  margin-top: 0;}
+.header-area {position: inherit;background: #000 !important;margin-top: 0;}
+.home-page-about-us-area .home-page-about-us-content {padding-top: 50px;}
+.home-page-about-us-area .home-page-about-us-content h2 {font-size: 40px;}
+.section-area {padding: 0 30px;}
+.home-page-schedule-area .left-shedule-area ul li span, .home-page-schedule-area .right-shedule-area ul li span { padding-left: 40px;}
+.homepage-menu-area .total-menu-area ul.nav-tabs li.active a {padding: 15px 30px;}
+.homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {left: 30%;}
+.free-consult .free-consult-text p {font-size: 24px;}
+.footer-top-area .single-footer h3{font-size: 20px;}
+.page-header-area {padding: 50px 0;}
+.about-page-banner-area h2 { font-size: 40px;}
+.reservation-area .total-reservation {text-align: left;font-size: 16px;}
+.homepage-team-area .team-area .single-team {padding-top:105px;}
+
+
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px;}
+.mobile-menu-area{display: block;}
+.header-area, .lSAction{display: none;}
+.header-area .header-right ul li {width: 40px;}
+.header-area .main-menu-area ul li a {padding: 38px 19px;}
+.preview-2 .nivo-controlNav {  bottom: 527px;  right: 0;}
+.homepage-team-area .team-area .single-team .image-round .team-image {  height: 387px;  width: 387px;}
+.homepage-team-area .team-area .single-team .image-round .team-image a img {top: -137px;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-content-area .informations ul li {margin-right: 26px;}
+.footer-top-area .single-footer .footer-social-media-area ul li {margin: 1px;}
+.footer-top-area .footer-three ul li {margin: 1px;}
+.menu-page-breakfast-area .homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span, .menu-page-lunch-area .homepage-menu-area.lunch-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {left: 23% !important;top: 0px !important;}
+.chefs-page-area .total-team-area .single-team .image-round .team-image {height: 387px;width: 387px;}
+.chefs-page-area .total-team-area .single-team .image-round .team-image a img {top: -100px;}
+.slider-area .slider-1 .read-more button {margin: 15px 0px;}
+.blog-page-area .all-blog-content-area .single-blog .blog-image a i {transform: translateY(-80%);}
+.header-area .header-right ul li .search-text {right: 0;}
+.header-area .header-right ul li i {padding: 38px 8px;}
+.header-area .logo-area, .home-page-services-area {  margin-top: 0;}
+.header-area {position: inherit;background: #000 !important;margin-top: 0;}
+.home-page-about-us-area .home-page-about-us-content {padding: 50px 0;text-align: center;}
+.home-page-about-us-area .home-page-about-us-content h2 {font-size: 37px;}
+.section-area {padding: 0px;}
+.home-page-schedule-area .left-shedule-area ul li span, .home-page-schedule-area .right-shedule-area ul li span { padding-left: 40px;}
+.homepage-menu-area .total-menu-area ul.nav-tabs li.active a {padding: 15px 65px;}
+.homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {left: 23%;}
+.free-consult .free-consult-text p {font-size: 18px;margin-bottom: 20px;}
+.footer-top-area .single-footer h3{font-size: 20px;}
+.page-header-area {padding: 50px 0;}
+.about-page-banner-area h2 { font-size: 40px;}
+.reservation-area .total-reservation {text-align: left;font-size: 16px;}
+.error-page-area .error-page h1 {font-size: 160px;line-height: 182px;}
+ .error-page-area .error-page {background: #dc3522 none repeat scroll center center / cover ;text-align: center;padding: 100px 0;}
+ .footer-top-area .single-footer .footer-social-media-area ul {  text-align: left;}
+.footer-top-area .single-footer .footer-social-media-area ul li a{text-align: center;}
+.single-footer {  margin-bottom: 30px;}
+.slider-area .slider-1 p {letter-spacing: 6px;}
+.slider-area .slider-1 h1 {font-size: 33px;line-height: 40px;}
+.slider-area .slider-1 h1::after {width: 291px;}
+.preview-2 .nivo-controlNav{display: none;}
+.reservation-area .total-reservation .single-reservation{border:0px;}
+.about-image {text-align: center;}
+.section-area h2 { font-size: 33px;}
+.homepage-menu-area .total-menu-area ul.nav-tabs li a {margin: 0 0;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-content-area h3 a { font-size: 21px;}
+.page-sidebar-area {  margin-top: 60px;}
+.single-team-page-area .team-image {  margin-bottom: 30px;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-image a i {transform: translateY(-50%);}
+
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+.container {width:300px;}
+.mobile-menu-area{display: block;}
+.header-area, .slider-content, .lSAction{display: none !important;}
+.header-area .header-right ul li {width: 40px;}
+.header-area .main-menu-area ul li a {padding: 38px 19px;}
+.preview-2 .nivo-controlNav {  bottom: 527px;  right: 0;}
+.homepage-team-area .team-area .single-team .image-round .team-image {  height: 237px;  width: 237px;}
+.homepage-team-area .team-area .single-team .image-round .team-image a img {top: -137px;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-content-area .informations ul li {margin-right: 26px;}
+.footer-top-area .single-footer .footer-social-media-area ul li {margin: 1px;}
+.footer-top-area .footer-three ul li {margin: 1px;}
+.menu-page-breakfast-area .homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span, .menu-page-lunch-area .homepage-menu-area.lunch-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {left: 23% !important;top: 0px !important;}
+.chefs-page-area .total-team-area .single-team .image-round .team-image {height: 237px;width: 237px;}
+.chefs-page-area .total-team-area .single-team .image-round .team-image a img {top: -170px;}
+.slider-area .slider-1 .read-more button {margin: 15px 0px;}
+.blog-page-area .all-blog-content-area .single-blog .blog-image a i {transform: translateY(-80%);}
+.header-area .header-right ul li .search-text {right: 0;}
+.header-area .header-right ul li i {padding: 38px 8px;}
+.header-area .logo-area, .home-page-services-area {  margin-top: 0;}
+.header-area {position: inherit;background: #000 !important;margin-top: 0;}
+.home-page-about-us-area .home-page-about-us-content {padding: 50px 0;text-align: center;}
+.home-page-about-us-area .home-page-about-us-content h2 {font-size: 25px;}
+.section-area {padding: 0px;}
+.home-page-schedule-area .left-shedule-area ul li span, .home-page-schedule-area .right-shedule-area ul li span { padding-left: 5px;}
+.homepage-menu-area .total-menu-area ul.nav-tabs li.active a {padding: 15px 65px;margin: 0;}
+.homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {left: 35%;}
+.free-consult .free-consult-text p {font-size: 18px;margin-bottom: 20px;}
+.footer-top-area .single-footer h3{font-size: 20px;}
+.page-header-area {padding: 50px 0;}
+.about-page-banner-area h2 { font-size: 26px;}
+.reservation-area .total-reservation {text-align: left;font-size: 16px;}
+.error-page-area .error-page h1 {font-size: 160px;line-height: 182px;}
+ .error-page-area .error-page {background: #dc3522 none repeat scroll center center / cover ;text-align: center;padding: 100px 0;}
+ .footer-top-area .single-footer .footer-social-media-area ul {  text-align: left;}
+.footer-top-area .single-footer .footer-social-media-area ul li a, .homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish, .single-news-page .comments-area{text-align: center;}
+.single-footer {  margin-bottom: 30px;}
+.slider-area .slider-1 p {letter-spacing: 6px;}
+.slider-area .slider-1 h1 {font-size: 33px;line-height: 40px;}
+.slider-area .slider-1 h1::after {width: 291px;}
+.preview-2 .nivo-controlNav{display: none;}
+.reservation-area .total-reservation .single-reservation{border:0px;margin-bottom: 30px;}
+.about-image {text-align: center;}
+.section-area h2 { font-size: 25px;}
+.homepage-menu-area .total-menu-area ul.nav-tabs li a {margin: 0 0;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-content-area h3 a { font-size: 21px;}
+.page-sidebar-area {  margin-top: 60px;}
+.single-team-page-area .team-image {  margin-bottom: 30px;}
+.homepage-menu-area .total-menu-area ul.nav-tabs li {margin: 10px 5px;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-image a i {transform: translateY(-50%);}
+.homepage-blog-area .total-blog-area .blog-area .owl-buttons div.owl-prev {  left: -16%; position: absolute;}
+.homepage-blog-area .total-blog-area .blog-area .owl-buttons div.owl-next{right: -16%}
+.home-page-testimonial-area .testimonial-area .single-testiminial p {padding: 10px 10px;}
+.page-header-area h1 {font-size: 37px;}
+.about-page-banner-area p {letter-spacing: 3px;}
+.homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish a.pull-left {height: 260px;width: 260px;line-height: 260px;margin-bottom: 30px;}
+.homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish .dish-content h3.media-heading::after {bottom: -18px;right: 0;}
+.single-news-page .comments-area .main-comments a {padding-right: 0;float: inherit !important;display: inline-block;  margin-bottom: 30px;}
+.homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish {padding: 40px 0;}
+}
+
+/* Large Mobile :480px. */
+@media only screen and (max-width : 320px) {
+.container {width:300px;}
+.mobile-menu-area{display: block;}
+.header-area, .slider-content, .lSAction{display: none !important;}
+.header-area .header-right ul li {width: 40px;}
+.header-area .main-menu-area ul li a {padding: 38px 19px;}
+.preview-2 .nivo-controlNav {  bottom: 527px;  right: 0;}
+.homepage-team-area .team-area .single-team .image-round .team-image {  height: 237px;  width: 237px;}
+.homepage-team-area .team-area .single-team .image-round .team-image a img {top: -137px;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-content-area .informations ul li {margin-right: 26px;}
+.footer-top-area .single-footer .footer-social-media-area ul li {margin: 1px;}
+.footer-top-area .footer-three ul li {margin: 1px;}
+.menu-page-breakfast-area .homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span, .menu-page-lunch-area .homepage-menu-area.lunch-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {left: 23% !important;top: 0px !important;}
+.chefs-page-area .total-team-area .single-team .image-round .team-image {height: 237px;width: 237px;}
+.chefs-page-area .total-team-area .single-team .image-round .team-image a img {top: -170px;}
+.slider-area .slider-1 .read-more button {margin: 15px 0px;}
+.blog-page-area .all-blog-content-area .single-blog .blog-image a i {transform: translateY(-80%);}
+.header-area .header-right ul li .search-text {right: 0;}
+.header-area .header-right ul li i {padding: 38px 8px;}
+.header-area .logo-area, .home-page-services-area {  margin-top: 0;}
+.header-area {position: inherit;background: #000 !important;margin-top: 0;}
+.home-page-about-us-area .home-page-about-us-content {padding: 50px 0;text-align: center;}
+.home-page-about-us-area .home-page-about-us-content h2 {font-size: 25px;}
+.section-area {padding: 0px;}
+.home-page-schedule-area .left-shedule-area ul li span, .home-page-schedule-area .right-shedule-area ul li span { padding-left: 5px;}
+.homepage-menu-area .total-menu-area ul.nav-tabs li.active a {padding: 15px 65px;margin: 0;}
+.homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {left: 35%;}
+.free-consult .free-consult-text p {font-size: 18px;margin-bottom: 20px;}
+.footer-top-area .single-footer h3{font-size: 20px;}
+.page-header-area {padding: 50px 0;}
+.about-page-banner-area h2 { font-size: 26px;}
+.reservation-area .total-reservation {text-align: left;font-size: 16px;}
+.error-page-area .error-page h1 {font-size: 160px;line-height: 182px;}
+ .error-page-area .error-page {background: #dc3522 none repeat scroll center center / cover ;text-align: center;padding: 100px 0;}
+ .footer-top-area .single-footer .footer-social-media-area ul {  text-align: left;}
+.footer-top-area .single-footer .footer-social-media-area ul li a, .homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish, .single-news-page .comments-area{text-align: center;}
+.single-footer {  margin-bottom: 30px;}
+.slider-area .slider-1 p {letter-spacing: 6px;}
+.slider-area .slider-1 h1 {font-size: 33px;line-height: 40px;}
+.slider-area .slider-1 h1::after {width: 291px;}
+.preview-2 .nivo-controlNav{display: none;}
+.reservation-area .total-reservation .single-reservation{border:0px;margin-bottom: 30px;}
+.about-image {text-align: center;}
+.section-area h2 { font-size: 25px;}
+.homepage-menu-area .total-menu-area ul.nav-tabs li a {margin: 0 0;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-content-area h3 a { font-size: 21px;}
+.page-sidebar-area {  margin-top: 60px;}
+.single-team-page-area .team-image {  margin-bottom: 30px;}
+.homepage-menu-area .total-menu-area ul.nav-tabs li {margin: 10px 5px;}
+.homepage-blog-area .total-blog-area .blog-area .single-blog .blog-image a i {transform: translateY(-50%);}
+.homepage-blog-area .total-blog-area .blog-area .owl-buttons div.owl-prev {  left: -16%; position: absolute;}
+.homepage-blog-area .total-blog-area .blog-area .owl-buttons div.owl-next{right: -16%}
+.home-page-testimonial-area .testimonial-area .single-testiminial p {padding: 10px 10px;}
+.page-header-area h1 {font-size: 37px;}
+.about-page-banner-area p {letter-spacing: 3px;}
+.homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish a.pull-left {height: 260px;width: 260px;line-height: 260px;margin-bottom: 30px;}
+.homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish .dish-content h3.media-heading::after {bottom: -18px;right: 0;}
+.single-news-page .comments-area .main-comments a {padding-right: 0;float: inherit !important;display: inline-block;  margin-bottom: 30px;}
+.homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish {padding: 40px 0;}
+
+
+}
+ 

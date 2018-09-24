@@ -1,0 +1,297 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Chili Lite v1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2018-08-27 17:51:57+0000\n"
+"Last-Translator: test <test@test.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:20
+#@ chili-lite
+msgid "404"
+msgstr ""
+
+#: 404.php:21
+#@ chili-lite
+msgid "Page not Found"
+msgstr ""
+
+#: 404.php:28
+#@ chili-lite
+msgid "The page you are looking is not available or has been removed.Try going to Home Page by using the button below."
+msgstr ""
+
+#: 404.php:30
+#@ chili-lite
+msgid "Go to Home Page"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:33
+#@ chili-lite
+msgctxt "comments title"
+msgid "1 Comment"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:38
+#, php-format
+#@ chili-lite
+msgctxt "comments title"
+msgid "%d Comments"
+msgid_plural "%d Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:52
+#: comments.php:67
+#@ chili-lite
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:53
+#: comments.php:68
+#@ chili-lite
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:79
+#@ chili-lite
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:54
+#@ chili-lite
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:228
+#@ chili-lite
+msgid "Blog"
+msgstr ""
+
+#: functions.php:231
+#@ chili-lite
+msgid "404 Error"
+msgstr ""
+
+#: functions.php:246
+#@ chili-lite
+msgid "Leave Comments"
+msgstr ""
+
+#: functions.php:247
+#@ chili-lite
+msgid "Send Message"
+msgstr ""
+
+#: functions.php:275
+#@ chili-lite
+msgid "at"
+msgstr ""
+
+#: functions.php:277
+#@ chili-lite
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:292
+#@ chili-lite
+msgid "Add Menu"
+msgstr ""
+
+#: inc/chili-function.php:18
+#@ chili-lite
+msgid "site logo"
+msgstr ""
+
+#: inc/chili-function.php:33
+#@ chili-lite
+msgid "Chili WordPress Theme"
+msgstr ""
+
+#: inc/customizer.php:20
+#@ chili-lite
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/customizer.php:35
+#@ chili-lite
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/customizer.php:42
+#@ chili-lite
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer.php:45
+#@ chili-lite
+msgid "Pick a color for footer background."
+msgstr ""
+
+#. translators: %s: post date
+#: inc/template-tags.php:29
+#, php-format
+#@ chili-lite
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. translators: %s: post author
+#: inc/template-tags.php:35
+#, php-format
+#@ chili-lite
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:52
+#: inc/template-tags.php:60
+#@ chili-lite
+msgid ", "
+msgstr ""
+
+#. translators: %s: categories
+#: inc/template-tags.php:56
+#, php-format
+#@ chili-lite
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: %s: tags
+#: inc/template-tags.php:63
+#, php-format
+#@ chili-lite
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:70
+#, php-format
+#@ chili-lite
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post
+#. translators: %s: Name of current post 
+#: inc/template-tags.php:77
+#: template-parts/content-page.php:29
+#, php-format
+#@ chili-lite
+msgid "Edit %s"
+msgstr ""
+
+#: inc/widget/register-widget.php:10
+#@ chili-lite
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widget/register-widget.php:12
+#: inc/widget/register-widget.php:21
+#: inc/widget/register-widget.php:30
+#@ chili-lite
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/widget/register-widget.php:19
+#@ chili-lite
+msgid "Footer Widget"
+msgstr ""
+
+#: inc/widget/register-widget.php:28
+#@ chili-lite
+msgid "Contact Sidebar"
+msgstr ""
+
+#: template-parts/content-none.php:14
+#@ chili-lite
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: %s: post title
+#: template-parts/content-none.php:23
+#, php-format
+#@ chili-lite
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:27
+#@ chili-lite
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:33
+#@ chili-lite
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:18
+#: template-parts/content-single.php:25
+#@ chili-lite
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-search.php:28
+#: template-parts/content.php:26
+#@ chili-lite
+msgid "by "
+msgstr ""
+
+#: template-parts/content-single.php:19
+#@ chili-lite
+msgid "By Admin: "
+msgstr ""
+
+#: template-parts/content-single.php:20
+#@ chili-lite
+msgid "Comment: 0"
+msgstr ""
+
+#: template-parts/content-single.php:20
+#@ chili-lite
+msgid "Comment: 1"
+msgstr ""
+
+#: template-parts/content-single.php:20
+#@ chili-lite
+msgid "Comments %"
+msgstr ""
+
+#: template-parts/content-single.php:36
+#, php-format
+#@ chili-lite
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr ""
+
+#: template-parts/content-single.php:41
+#@ chili-lite
+msgid "Next - "
+msgstr ""
+
+#: template-parts/content-single.php:43
+#@ chili-lite
+msgid "Previous - "
+msgstr ""
+
+#: template-parts/content-single.php:54
+#@ chili-lite
+msgid "Tags"
+msgstr ""
+

@@ -1,0 +1,2277 @@
+/*
+Theme Name: Chili Lite
+Theme URI: https://digitalcenturysf.com/templates/chili-lite-free-multi-purpose-restaurant-theme/
+Author: DigitalCenturySF
+Author URI: http://www.digitalcenturysf.com/
+Description: Are you looking for a suitable restaurant template for your businesses or clients? Chili is a premium WordPress theme designed for all type of food-related businesses such as restaurants, bakeries, bars, tea shops, pastry shops, catering services, and so on. This WordPress theme includes WooCommerce functionality so you can easily setup your store and accept online orders. Below is the main features of this theme. For more information, visit our website http://www.digitalcenturysf.com
+Version: 1.0.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: chili-lite
+Tags: blog, e-commerce, food-and-drink, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, flexible-header, sticky-post, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Chili is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+a:active,
+a:focus,
+a{
+	color: #dc3522;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 20px 30px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, .8);
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb;
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation li {
+	float: left;
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul ul li {
+
+}
+
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+}
+
+.main-navigation ul ul :hover > a,
+.main-navigation ul ul .focus > a {
+}
+
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a.focus {
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom:0em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+} 
+
+/* ------------------------------------
+Based Color of Theme 
+---------------------------------------*/
+html,
+body {
+  height: 100%;
+}
+.floatleft {
+  float: left;
+}
+.floatright {
+  float: right;
+}
+.alignleft {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.alignright {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+a:focus {
+  outline: 0px solid;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.fix {
+  overflow: hidden;
+}
+p {
+  margin: 0 0 26px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 26px;
+  font-family: 'Raleway', sans-serif;
+}
+a {
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+}
+a:hover {
+  color: #dc3522;
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  outline: 0 none;
+}
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.clear {
+  clear: both;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #646464;
+}
+.acurate {
+  margin: 0;
+  padding: 0;
+}
+.section-area {
+  text-align: center;
+  padding: 0px 100px;
+  color: #000000;
+}
+.section-area h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 70px;
+}
+.section-area h2:after {
+  background: rgba(0, 0, 0, 0) url("img/line.png") no-repeat scroll 0 0;
+  bottom: -40px;
+  content: "";
+  height: 30px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 265px;
+}
+.padding-top {
+  padding-top: 30px;
+}
+.padding-bottom {
+  padding-bottom: 30px;
+}
+/* ------------------------------------
+2.Header Section Styling 
+---------------------------------------*/
+.header-area {
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  margin-top: 25px; 
+}
+.header-area .logo-area {
+  text-align: center;
+  margin-top: 25px;
+}
+.header-area .logo-area a {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+}
+.header-area .main-menu-area ul {
+  text-align: right;
+}
+.header-area .main-menu-area ul li {
+  display: inline-block;
+  position: relative;
+  /* Dropdown Menu area */
+}
+.header-area .main-menu-area ul li a {
+  display: block;
+  padding: 38px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.5s ease 0s;
+}
+.header-area .main-menu-area ul li a:hover {
+  color: #dc3522 !important;
+  background: transparent;
+} 
+.header-area .main-menu-area ul li ul {
+  background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  transition: all 0.5s ease 0s;
+  width: 200px;
+  z-index: 99999;
+  text-align: left;
+  visibility: hidden;
+}
+.header-area .main-menu-area ul li ul li {
+  display: block;
+  border-bottom: 1px dashed #dc3522;
+}
+.header-area .main-menu-area ul li ul li:last-child {
+  border-bottom: 0;
+}
+.header-area .main-menu-area ul li ul li a {
+  display: block;
+  padding: 10px 24px;
+  text-transform: none;
+  transition: all 0.5s ease 0s;
+}
+.header-area .main-menu-area ul li ul li a:hover {
+  color: #dc3522;
+}
+.header-area .main-menu-area ul li:hover > ul {
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+.header-area .header-right ul {
+  text-align: center;
+}
+.header-area .header-right ul li {
+  float: left;
+  position: relative;
+  width: 48px;
+}
+.header-area .header-right ul li .search-text {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #dc3522;
+  box-shadow: 0 0 0.5px -1.5px rgba(153, 157, 163, 0.4);
+  color: #000000;
+  display: none;
+  font-size: 16px;
+  height: 35px;
+  left: -145px;
+  padding: 5px 18px 5px 10px;
+  position: absolute;
+  top: 102px;
+  z-index: 9;
+}
+.header-area .main-menu-area ul li ul.sub-menu ul.sub-menu{
+	left: 90%;
+	top: 0;
+}
+.header-area .header-right ul li i {
+  width: 36px;
+  cursor: pointer;
+  display: block;
+  padding: 38px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.5s ease 0s;
+  font-size: 20px;
+}
+.header-area .header-right ul li i:hover {
+  color: #dc3522 !important;
+}
+.header-area .header-right ul li a.cart-area {
+  display: block;
+  font-size: 25px !important;
+}
+.header-area .header-right ul li a.cart-area span {
+  background: #dc3522;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #ffffff;
+  content: "";
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: -8px;
+  top: 30px;
+  width: 20px;
+  font-size: 16px;
+}
+div#sticker {
+  background: transparent;
+}
+.stick {
+  position: fixed !important;
+  top: 0px !important;
+  z-index: 9999999;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9) !important;
+  margin: 0;
+  padding: 0px 0 !important;
+}
+.stick {
+  border-bottom: 2px solid #dc3522;
+}
+.mobile-menu-area {
+  display: none;
+}  
+/*-------------------------------------
+14.Footer Start Here 
+---------------------------------------*/
+/*-------------------------------------
+14.Footer Area Section Start Here 
+---------------------------------------*/
+.footer-top-area { 
+  background-size: cover;
+  background-position: center center;
+  padding: 85px 0;
+}
+.footer-top-area .single-footer h3 {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.55;
+}
+.footer-top-area .single-footer p {
+  color: #ffffff;
+}
+.footer-top-area .single-footer .footer-social-media-area ul {
+  text-align: center;
+}
+.footer-top-area .single-footer .footer-social-media-area ul li {
+  display: inline-block;
+  margin: 2px;
+}
+.footer-top-area .single-footer .footer-social-media-area ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  color: #dddddd;
+  background: #000000;
+  border: 1px solid #dc3522;
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+}
+.footer-top-area .single-footer .footer-social-media-area ul li a:hover {
+  background: #dc3522;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 1px solid #dc3522;
+}
+.footer-top-area .footer-two ul li {
+  color: #999999;
+}
+.footer-top-area .footer-two ul li i {
+  color: #2aacff;
+  margin-right: 5px;
+  display: inline-block;
+}
+.footer-top-area .footer-three ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-top-area .footer-three ul li {
+  display: inline-block;
+  width: 30%;
+  margin: 1px 3px;
+}
+.footer-top-area .footer-three ul li a {
+  display: block;
+}
+.footer-top-area .footer-three ul li a img {
+  display: block;
+  width: 100%;
+}
+.footer-top-area .footer-three ul li a img:hover {
+  opacity: .9;
+}
+.footer-top-area .chili_lite_address ul li {
+  display: inline-block;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  font-weight: 300;
+}
+.footer-top-area .chili_lite_address ul li i {
+  margin: 5px;
+  color: #dc3522;
+}
+.footer-bottom-area {
+  background: #000000;
+  padding: 25px 0;
+}
+.footer-bottom a{
+	color: #fff;
+}
+.footer-bottom a:hover{ 
+	color: #dc3522;
+}
+.footer-bottom-area .footer-bottom p {
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+/*---------------------------------
+  2.2 Scrolling Nav Styling 
+  ---------------------------------*/
+#scrollUp {
+  background: transparent;
+  border: 1px solid #dc3522;
+  bottom: 100px;
+  color: #dc3522 !important;
+  display: block;
+  font-size: 25px;
+  height: 60px;
+  line-height: 0;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  text-decoration: none !important;
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+  width: 60px;
+  z-index: 1000;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+#scrollUp:hover {
+  background: #96180a;
+}
+#scrollUp:hover i {
+  color: #ffffff;
+}
+#scrollUp i {
+  display: block;
+  padding-top: 12px;
+  font-size: 30px;
+  font-weight: bold;
+}
+/*-------------------------------------
+15.Page Header Section Start Here 
+---------------------------------------*/
+.page-header-area {
+  background: rgba(0, 0, 0, 0) url("img/bennar.jpg") no-repeat scroll center center / cover;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 210px 0 140px 0;
+}
+.page-header-area h1 {
+  font-weight: 600;
+  font-size: 60px;
+}
+.page-header-area ul li {
+  display: inline-block;
+  border: 0px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  margin: 0px 10px;
+  font-weight: 600;
+  position: relative;
+}
+.page-header-area ul li:first-child:after {
+  position: absolute;
+  content: "\f101";
+  top: 0;
+  left: 55px;
+  right: 0;
+  display: block;
+  font-family: FontAwesome;
+}
+.page-header-area ul li:last-child {
+  color: #dc3522;
+  text-transform: capitalize;
+}
+.page-header-area ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+/* ------------------------------------
+15.About Page Start Here 
+---------------------------------------*/
+.about-page-content-area {
+  padding: 100px 0;
+  background-position: top center;
+}
+.about-page-content-area .about-us-content h2 {
+  color: #000000;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.about-page-content-area .about-us-content p span {
+  color: #dc3522;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.about-page-content-area .about-page-featured-image a {
+  display: block;
+}
+.about-page-content-area .about-page-featured-image a img {
+  transition: all 0.3s ease 0s;
+}
+.about-page-content-area .about-page-featured-image a img:hover {
+  opacity: .9;
+}
+/* ------------------------------------
+16.About Page Benner Start Here 
+---------------------------------------*/
+.about-page-banner-area {
+  padding: 120px 0;
+  background-position: top center;
+  color: #ffffff;
+  text-align: center;
+}
+.about-page-banner-area h2 {
+  font-weight: 900;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+.about-page-banner-area h2 span {
+  color: #dc3522;
+}
+.about-page-banner-area p {
+  letter-spacing: 10px;
+  font-size: 14px;
+}
+.about-page-banner-area .read-more {
+  display: inline-block;
+  text-align: center;
+}
+.about-page-banner-area .read-more a {
+  background: #dc3522;
+  color: #dc3522;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  transition: all 0.5s ease 0s;
+  display: block;
+  font-size: 16px;
+  margin: 20px auto;
+  color: #ffffff;
+}
+.about-page-banner-area .read-more a:hover {
+  background: #96180a;
+}
+#fancy_title{
+    display: none !important;
+}
+.slickr-flickr-gallery{
+	padding: 0 !important;
+}
+/* ------------------------------------
+17.Menu Page Breakfast Start Here 
+---------------------------------------*/
+.menu-page-breakfast-area .homepage-menu-area .section-area p {
+  padding: 0;
+}
+.menu-page-breakfast-area .homepage-menu-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {
+  left: 17% !important;
+  top: 2px !important;
+}
+/*------------------------------------
+18.Menu Page Lunch Start Here 
+---------------------------------------*/
+.menu-page-lunch-area .homepage-menu-area.lunch-area {
+  background: rgba(0, 0, 0, 0) url("img/team/bg.png") no-repeat scroll center top;
+  padding: 100px 0;
+}
+.menu-page-lunch-area .homepage-menu-area.lunch-area .section-area p {
+  padding: 0;
+}
+.menu-page-lunch-area .homepage-menu-area.lunch-area .total-menu-area .menu-details ul.single-dish-list li .single-dish span {
+  left: 17% !important;
+  top: 2px !important;
+}
+.menu-page-lunch-area .homepage-menu-area.lunch-area .total-menu-area .menu-details ul.single-dish-list li .single-dish a.pull-left {
+  background: #f4f1ea !important;
+}
+/* ------------------------------------
+19.Reservation Page Our Location Area Start Here 
+---------------------------------------*/
+.reservation-area {
+  background: rgba(0, 0, 0, 0) url("img/team/bg.png") no-repeat scroll center top;
+  padding: 100px 0;
+}
+.reservation-area .total-reservation {
+  padding: 50px 0 0;
+  text-align: center;
+}
+.reservation-area .total-reservation .single-reservation {
+  border-right: 1px solid #dc3522;
+}
+.reservation-area .total-reservation .col-md-4:last-child .single-reservation {
+  border-right: none !important;
+}
+.reservation-area .total-reservation .single-reservation h3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #dc3522;
+}
+/* ------------------------------------
+20.Blog Page Start Here 
+---------------------------------------*/
+.blog-page-area .all-blog-content-area {
+  overflow: hidden;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-image {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-image:hover i {
+  opacity: 1;
+  color: #111111;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-image:hover:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-image a {
+  display: block;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-image a img {
+  width: 100%;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-image a i {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  bottom: 0;
+  height: 40px;
+  left: 0;
+  line-height: 40px;
+  margin: auto;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 25%;
+  transform: translateY(-100%);
+  width: 40px;
+  z-index: 99;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-image:after {
+  position: absolute;
+  content: "";
+  background: rgba(220, 53, 34, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  transform: scale(0);
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-content-area {
+  padding: 20px;
+  background: #f4f1ea;
+  word-wrap: break-word;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-content-area h3 {
+  margin-bottom: 15px;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-content-area h3 a {
+  font-size: 22px;
+  color: #111111;
+  transition: all 0.5s ease 0s;
+  font-weight: 600;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-content-area h3 a:hover {
+  color: #dc3522;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-content-area .informations {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+.blog-page-area .all-blog-content-area .single-blog .blog-content-area .informations ul li {
+  display: inline-block;
+  margin-right: 30px;
+} 
+.blog-page-area .all-blog-content-area .single-blog .blog-content-area .informations ul li i {
+  color: #dc3522;
+  margin-right: 15px;
+}
+.fa-thumb-tack.sticky{
+	color: #dc3522;
+	display: inline-block;
+	margin-right: 5px;
+}
+.pagination-area {
+  padding-top: 20px;
+}
+.pagination-area ul {
+  text-align: center;
+}
+.pagination-area ul li {
+  display: inline-block;
+}
+.pagination-area ul li.active a {
+  background: #dc3522;
+  color: #ffffff;
+}
+.pagination-area .nav-links span.current,
+.pagination-area .nav-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: transparent;
+  border: 1px solid #dc3522;
+  color: #000000;
+  font-size: 18px;
+  text-decoration: uppercase;
+  transition: all 0.5s ease 0s;
+}
+.pagination-area .nav-links  span.current ,
+.pagination-area .nav-links a:hover ,
+.pagination-area ul li a:hover {
+  background: #dc3522;
+  color: #ffffff;
+}
+
+.woocommerce-pagination
+/*-------------------------------------
+20.1 Page Sidebar area Start Here 
+---------------------------------------*/
+.page-sidebar-area .single-sidebar {
+    margin-bottom: 30px;
+}
+.single-sidebar {
+    margin-bottom: 30px;
+}
+.page-sidebar-area .single-sidebar h3 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.5s ease 0s;
+  position: relative;
+  text-transform: uppercase;
+}
+.page-sidebar-area .single-sidebar h3:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 40px;
+  display: block;
+  background: #dc3522;
+  width: 50px;
+  height: 3px;
+}
+.page-sidebar-area .single-sidebar #custom-search-input {
+  margin: 45px 0 0;
+  padding: 0;
+}
+.page-sidebar-area .single-sidebar #custom-search-input .search-query {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-bottom: 0;
+  padding-left: 15px;
+  padding-right: 3px;
+  height: 45px;
+}
+.page-sidebar-area .single-sidebar .serach-box {
+  position: relative;
+}
+.page-sidebar-area .single-sidebar .serach-box button:hover,
+.page-sidebar-area .single-sidebar .serach-box button {
+  font-size: 20px;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  width: 25px;
+  z-index: 99;
+  background: transparent;
+  box-shadow:none;
+  border: 0;
+}
+.page-sidebar-area .single-sidebar .serach-box button i {
+  font-size: 18px;
+}
+.page-sidebar-area .single-sidebar ul li {
+  border-top: 1px solid #dddddd;
+  margin-bottom: 5px;
+}
+.page-sidebar-area .single-sidebar ul.sub-menu li:first-child,
+.page-sidebar-area .single-sidebar ul.children li:first-child {
+  border-top: 1px solid #dddddd; 
+}
+.page-sidebar-area .single-sidebar ul li:first-child {
+  border: none;
+}
+.page-sidebar-area .single-sidebar ul li a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  transition: all 0.5s ease 0s;
+  word-wrap: break-word;
+}
+#custom-search-input i.fa-search{
+	position: absolute;
+    right: 8px;
+    top: 15px;
+    z-index: 99;
+}
+/*-------------------------------------
+21.Single News page start here  
+---------------------------------------*/
+.single-news-page .main-news-page-section-area .news-page-content-section-area .single-news-area .news-body {
+  padding-left: 0px;
+  padding-top: 20px;
+}
+.single-news-page .news-body > h3 {
+  font-size: 22px;
+  color: #000000 !important;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.single-news-page .single-news-area > a > img {
+  margin-bottom: 35px;
+}
+.single-news-page .single-news-area > a > img:hover {
+  opacity: .9;
+}
+.single-news-page .news-body .informations {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+.single-news-page .news-body .informations ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.single-news-page .news-body .informations ul li i {
+  color: #dc3522;
+  margin-right: 15px;
+}
+.single-news-page .news-page-tag-section-area {
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  margin: 60px 0 20px;
+  padding: 20px 0;
+}
+.single-news-page .news-page-tag-section-area h4 {
+  color: #000000;
+  margin-bottom: 0;
+}
+.single-news-page .news-page-tag-section-area ul li {
+  display: inline-block;
+}
+.single-news-page .news-page-tag-section-area ul li a {
+  display: block;
+  padding: 2px;
+  color: #646464;
+}
+.single-news-page .comment-respond {
+  border-top: 1px solid #e3e3e3;
+  padding-top: 30px;
+}
+.single-news-page .comments-area .comment-list{
+	padding-left: 0;
+	margin-left: 0;
+	margin-top: 15px;
+}
+.single-news-page .comments-area .comment-list .media{
+	margin-top: 30px;
+}
+.single-news-page .comments-area .comment-list .comment.depth-8,
+.single-news-page .comments-area .comment-list .comment.depth-7,
+.single-news-page .comments-area .comment-list .comment.depth-6,
+.single-news-page .comments-area .comment-list .comment.depth-5,
+.single-news-page .comments-area .comment-list .comment.depth-4,
+.single-news-page .comments-area .comment-list .comment.depth-3,
+.single-news-page .comments-area .comment-list .comment.depth-2{
+   margin-left: 100px;
+}
+.single-news-page .comments-area h4 {
+  color: #000000;
+  margin-bottom: 0;
+}
+.single-news-page .comments-area .main-comments a {
+  padding-right: 30px;
+}
+.single-news-page .comments-area .main-comments .comments-body p {
+  margin-bottom: 10px;
+}
+.single-news-page .comments-area .main-comments .comments-body .replay-area a i {
+  color: #dc3522;
+  margin-right: 10px;
+}
+.single-news-page .leave-comments-area {
+  padding-top: 30px;
+}
+.single-news-page .leave-comments-area h4 {
+  color: #000000;
+  margin-bottom: 0;
+}
+.single-news-page .leave-comments-area fieldset {
+  margin-top: 20px;
+  margin-left: -15px;
+}
+.comment-respond input#author,
+.comment-respond input#email,
+.single-news-page .leave-comments-area fieldset input {
+  background: #dddddd none repeat scroll 0 0;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  height: 45px;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+.comment-respond input#author:focus,
+.comment-respond input#email:focus,
+.single-news-page .leave-comments-area fieldset input:focus {
+  border: 0px;
+  box-shadow: none;
+}
+p.comment-form-comment{
+	margin-bottom: 10px;
+}
+.comment-respond textarea#comment,
+.single-news-page .leave-comments-area fieldset textarea {
+  background: #dddddd none repeat scroll 0 0;
+  border-radius: 0;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+.single-news-page .leave-comments-area fieldset textarea:focus {
+  border: 0px;
+  box-shadow: none;
+}
+.comment-respond .form-submit input#submit,
+.single-news-page .leave-comments-area fieldset .btn-send {
+  background: #dc3522;
+  border: 0 none;
+  color: #ffffff;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px 45px;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+}
+.comment-respond .form-submit input#submit:hover,
+.single-news-page .leave-comments-area fieldset .btn-send:hover {
+  background: #96180a;
+}
+/*-------------------------------------
+22 Contact Form Page start Here 
+---------------------------------------*/
+.main-conatct-form-area {
+  background: rgba(0, 0, 0, 0) url("img/team/bg.png") no-repeat scroll center top;
+  padding: 100px 0;
+}
+.main-conatct-form-area .main-contact-form fieldset {
+  margin-top: 20px;
+}
+.main-conatct-form-area .main-contact-form fieldset input {
+  background: #dddddd none repeat scroll 0 0;
+  border-radius: 0;
+  height: 45px;
+  margin-right: 20px;
+}
+.main-conatct-form-area .main-contact-form fieldset input:focus {
+  border: 0px;
+  box-shadow: none;
+}
+.main-conatct-form-area .main-contact-form fieldset textarea {
+  background: #dddddd none repeat scroll 0 0;
+  border-radius: 0;
+  margin-right: 20px;
+}
+.main-conatct-form-area .main-contact-form fieldset textarea:focus {
+  border: 0px;
+  box-shadow: none;
+}
+.main-conatct-form-area .main-contact-form fieldset .btn-send {
+  background: #dc3522;
+  border: 0 none;
+  color: #ffffff;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  box-shadow: none;
+  text-shadow:none;
+}
+.main-conatct-form-area .main-contact-form fieldset .btn-send:hover {
+  background: #96180a;
+}
+.main-conatct-form-area .page-sidebar-area .single-sidebar {
+  margin-top: 20px;
+}
+.main-conatct-form-area .page-sidebar-area .single-sidebar ul {
+  padding-top: 20px;
+}
+.main-conatct-form-area .page-sidebar-area .single-sidebar ul li {
+  display: inline-block;
+  padding: 10px 0;
+}
+.main-conatct-form-area .page-sidebar-area .single-sidebar ul li i {
+  color: #dc3522;
+  margin-right: 10px;
+}
+/*-------------------------------------
+23.404 Page Area Start Here 
+---------------------------------------*/
+.error-page-area {
+  padding: 100px 0;
+  text-align: center;
+}
+.error-page-area .error-page {
+  background: #dc3522;
+  background-position: center center;
+  background-size: cover;
+  padding: 100PX;
+}
+.error-page-area .error-page h1 {
+  font-size: 300px;
+  color: #ffffff;
+  line-height: 300px;
+}
+.error-page-area .error-page p {
+  font-size: 30px;
+  color: #ffffff;
+}
+.error-page-area .error-page-message {
+  margin-top: 60px;
+}
+.error-page-area .error-page-message p {
+  font-size: 18px;
+  color: #000000;
+}
+.error-page-area .error-page-message .home-page a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  background: #dc3522;
+  padding: 15px 35px;
+  transition: all 0.5s ease 0s;
+}
+.error-page-area .error-page-message .home-page a:hover {
+  background: #96180a;
+  color: #ffffff;
+}
+/* ------------------------------------
+24.Our Chefs Page Start Here 
+---------------------------------------*/
+.chefs-page-area { 
+  padding: 100px 0;
+}
+.chefs-page-area .total-team-area .single-team {
+  position: relative;
+  padding-top: 175px;
+  text-align: center;
+  margin: 15px;
+}
+.chefs-page-area .total-team-area .single-team .image-round {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  border: 2px solid #dddddd;
+}
+.chefs-page-area .total-team-area .single-team .image-round .team-image {
+  width: 325px;
+  height: 325px;
+  background: #f4f1ea;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  border: 7px solid #ffffff;
+  transition: all 0.5s ease 0s;
+}
+.chefs-page-area .total-team-area .single-team .image-round .team-image:hover {
+  background: #dc3522;
+  border: 2px solid #96180a;
+}
+.chefs-page-area .total-team-area .single-team .image-round .team-image a {
+  text-align: center;
+}
+.chefs-page-area .total-team-area .single-team .image-round .team-image a img {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -75px;
+  margin: auto;
+}
+.chefs-page-area .total-team-area .single-team .team-content {
+  margin-top: 45px;
+}
+.chefs-page-area .total-team-area .single-team .team-content h3 {
+  margin-bottom: 5px;
+}
+.chefs-page-area .total-team-area .single-team .team-content h3 a {
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  TRANSITION: all 0.5s ease 0s;
+}
+.chefs-page-area .total-team-area .single-team .team-content h3 a:hover {
+  color: #dc3522;
+}
+/* ------------------------------------
+25.Single Chefs Page Start Here 
+---------------------------------------*/
+.single-team-page-area {
+  background: rgba(0, 0, 0, 0) url("img/team/bg.png") no-repeat scroll center top;
+  padding: 100px 0;
+}
+.single-team-page-area .team-image {
+  position: relative;
+  overflow: hidden;
+}
+.single-team-page-area .team-image:hover:before {
+  right: 0;
+  top: 0;
+}
+.single-team-page-area .team-image:hover:after {
+  left: 0;
+  bottom: 0;
+}
+.single-team-page-area .team-image:before {
+  right: -100%;
+  top: -100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  content: "";
+  transition: all .5s;
+}
+.single-team-page-area .team-image:after {
+  left: -100%;
+  bottom: -100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  content: "";
+  transition: all 0.5s ease 0s;
+}
+.single-team-page-area .team-image a {
+  display: block;
+}
+.single-team-page-area .team-image a img {
+  width: 100%;
+}
+.single-team-page-area .single-team-content-area h2 {
+  color: #002222;
+  display: block;
+  font-size: 30px;
+  position: relative;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.single-team-page-area .single-team-content-area h2:after {
+  background: #dc3522 none repeat scroll 0 0;
+  bottom: -45px;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 70px;
+}
+.single-team-page-area .single-team-content-area p.designation {
+  margin-bottom: 50px;
+}
+.single-team-page-area .single-team-content-area .social-media {
+  margin-top: 30px;
+}
+.single-team-page-area .single-team-content-area .social-media ul li {
+  display: inline-block;
+  border: 1px solid #dc3522;
+  width: 45px;
+  height: 44px;
+  margin: 5px;
+}
+.single-team-page-area .single-team-content-area .social-media ul li:hover {
+  border: 1px solid #dc3522;
+}
+.single-team-page-area .single-team-content-area .social-media ul li:hover a {
+  background: #dc3522;
+  color: #ffffff;
+}
+.single-team-page-area .single-team-content-area .social-media ul li a {
+  color: #dc3522;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+/*-------------------------------------
+26.Wocommerce Default Page Design
+--------------------------------------*/
+.woocommerce-cart .coupon .button{
+	background: transparent;
+	border: 1px solid #dc3522;
+	color: #dc3522;
+	padding: 9px 20px;
+	text-transform: capitalize;
+	font-weight: 400;
+	border-radius: 0px; 
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	margin: 0;
+	transition: all 0.5s ease 0s;
+	display: block;
+	font-size: 14px;
+	box-shadow: none;
+}
+.single_add_to_cart_button.button{
+	background: transparent;
+	border: 1px solid #dc3522 !important;
+	color: #dc3522 !important;
+	padding: 9px 20px;
+	text-transform: capitalize;
+	font-weight: 400;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	margin: 0;
+	transition: all 0.5s ease 0s;
+	display: block;
+	font-size: 14px;
+	box-shadow: none;
+	background: transparent !important;
+}
+.woocommerce-cart .coupon .button:hover{
+  background: #dc3522;
+  border: 1px solid #dc3522;
+  color: #ffffff;
+}
+.single_add_to_cart_button.button:hover {
+  background: #dc3522 !important;
+  border: 1px solid #dc3522 !important;
+  color: #ffffff !important;
+}
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+    width: 120px;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    font-family: inherit;
+    text-decoration: none;
+    overflow: visible;
+    padding: 9px 20px;
+    font-weight: 700;
+    border-radius: 3px;
+    left: auto;
+    background-color: #ebe9eb;
+    border: 0;
+    white-space: nowrap;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    text-shadow: none;
+    background: transparent;
+    border: 1px solid #dc3522;
+    color: #dc3522;
+    text-transform: capitalize;
+    font-weight: 400;
+    border-radius:0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    margin: 0;
+    transition: all 0.5s ease 0s;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button:hover {
+  background: #dc3522;
+  border: 1px solid #dc3522;
+  color: #ffffff;
+}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+	font-size: 100%;
+	margin: 0;
+	line-height: 1;
+	cursor: pointer;
+	position: relative;
+	font-family: inherit;
+	text-decoration: none;
+	overflow: visible;
+	padding: 9px 20px;
+	font-weight: 700;
+	border-radius: 3px;
+	left: auto;
+	background:#dc3522 !important;
+	border: 0;
+	white-space: nowrap;
+	display: inline-block;
+	background-image: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	text-shadow: none;
+	background: transparent;
+	border: 1px solid #dc3522;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 400;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	margin: 0;
+	transition: all 0.5s ease 0s;
+}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover{
+	background: #96180a !important;
+}
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+	font-size: 100%;
+	margin: 0;
+	line-height: 1;
+	cursor: pointer;
+	position: relative;
+	font-family: inherit;
+	text-decoration: none;
+	overflow: visible;
+	padding: 9px 20px;
+	font-weight: 700;
+	border-radius: 3px;
+	left: auto;
+	background:#dc3522 !important;
+	border: 0;
+	white-space: nowrap;
+	display: inline-block;
+	background-image: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	text-shadow: none;
+	background: transparent;
+	border: 1px solid #dc3522;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 400;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	margin: 0;
+	transition: all 0.5s ease 0s;
+}
+.woocommerce #payment #place_order:hover, .woocommerce-page #payment #place_order:hover {
+	background: #96180a !important;
+}
+.woo-page-area .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+	padding: 30px 10px;	
+	border: 1px solid #dc3522;
+
+}
+.woocommerce ul.products li.product h3 {
+    padding: .5em 0;
+    margin: 0;
+    font-size: 1em;
+    color: #777777;
+}
+.woocommerce ul.products li.product h3:hover {
+    padding: .5em 0;
+    margin: 0;
+    font-size: 1em;
+    color: #dc3522;
+}
+.woocommerce-pagination {
+  padding-top: 20px;
+}
+.woocommerce-pagination ul {
+  text-align: center;
+}
+.woocommerce-pagination ul li {
+  display: inline-block;
+}
+.woocommerce-pagination ul li a {
+    border:1px solid #dc3522;
+    color: #dc3522;
+    padding: 20px !important;
+    display: block !important;
+
+}
+.woocommerce-pagination ul li a:hover {
+    background:#dc3522 !important;
+    color: #ffffff !important;
+    padding: 20px !important;
+    display: block !important;
+}
+
+.woocommerce-pagination ul li span.current {
+    background:#dc3522 !important;
+    color: #ffffff !important;
+    padding: 21px !important;
+    display: block !important;
+}
+.woocommerce div.product div.images img {
+    border: 1px solid #dc3522;
+}
+
+.woocommerce div.product .product_title, .related.products h2 {
+	color: #000000;
+	position: relative;
+	font-weight: 600;
+	font-size: 28px;
+}
+.entry-content h2 {
+	color: #000000;
+	position: relative;
+	font-weight: 600;
+	font-size: 18px;
+}
+.related.products h2 {
+	color: #000000;
+	position: relative;
+	font-weight: 600;
+	font-size: 28px;
+	margin-bottom: 60px;
+}
+.woocommerce div.product .product_title:after, .entry-content  h2:after, .related.products h2:after{
+	background: #dc3522 none repeat scroll 0 0;
+	bottom: -15px;
+	content: "";
+	height: 3px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	width: 80px;
+}
+
+.woocommerce ul.products li.product .button:hover{
+    background:#dc3522 !important;
+    color: #dddddd !important;
+}
+.woo-page-area ul.products li.product a span.onsale {
+    background: #dc3522 !important;
+}
+.woocommerce ul.products li.product .price del {
+    color: inherit;
+    display: block;
+    opacity: 0.5;
+    color: #dc3522 !important;
+}
+.woocommerce ul.products li.product .price ins {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    font-weight: 700;
+    color: #000000 !important;
+}
+.woocommerce ul.products li.product .price {
+   color: #000000 !important;
+}
+.star-rating{
+	color: #dc3522 !important;
+}
+.woocommerce span.onsale {
+  background-color: #dc3522 !important; 
+  color: #fff;
+  font-size: 0.857em;
+  font-weight: 700;
+  left: 0em;
+  line-height: 3.236; 
+  min-height: 3.236em;
+  min-width: 3.236em;
+  padding: 0.202em;
+  position: absolute;
+  text-align: center;
+  top: 0em;
+    border-radius: 0;
+    width: 80px;
+    line-height: 33px;
+    margin:0 !important;
+}
+.woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce div.product .stock {
+  color: #000000 !important;
+  font-size: 1.25em;
+}
+.posted_in > a {
+  color: #000000;
+}
+
+#post-1000  .news-body ol,
+#comments .comment-list .media-body ol,
+#post-1178 .news-body ol{
+	padding-left: 0;
+}
+
+#post-1000  .news-body > ul,
+#comments .comment-list .media-body > ul,
+#post-1178 .news-body > ul{
+	margin-left: 35px;
+}
+#post-1000  .news-body ul,
+#post-1000  .news-body ol ul,
+#comments .comment-list .media-body ul li,
+#post-1178 .news-body ul li{
+	list-style: square;
+}
+#post-1168 .post-password-form input[type="submit"]{
+    width: 100px;
+    height: 34px;
+    font-size: 14px;
+}
+.widget_search label{
+	width: 100%;
+	position: relative;
+}
+.no-results.not-found .search-form input.search-submit,
+.widget_search input.search-submit{
+	display: none;
+}
+.widget_search label input.search-field {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 13px;
+    margin-top: 20px; 
+    z-index: 999999999;
+    background: transparent;
+} 
+.widget_search label .fa-search{
+    position: absolute;
+    right: 8px;
+    top: 34px;
+    font-size: 17px;
+    z-index: -1 !important;
+}
+.widget_categories ul li,
+.widget_archive ul li{
+	position: relative;
+}
+.widget_categories ul li span,
+.widget_archive ul li span{
+    position: absolute;
+    right: 0;
+    top: 11px;
+}
+.widget_categories select#cat,
+.widget_text .textwidget select,
+.widget_archive select{ 
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.tagcloud{
+	margin-top: 40px;
+} 
+.tagcloud a {
+    font-size: 14px !important;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-top: 5px;
+    display: inline-block;
+    color: #646464;
+}
+.tagcloud a:hover {
+    color: #dc3522;
+}
+.comment-respond .comment-form-author,
+.comment-respond .comment-form-email{
+	width: 48.5%;
+	float: left;
+	margin-bottom: 20px;
+}
+.comment-respond input#author,
+.comment-respond input#email{
+	width: 100%;
+	height: 43px;
+}
+.comment-respond input#email{
+	margin-left: 25px;
+}
+.pp_pic_holder.pp_woocommerce{
+	z-index: 9999999;
+}
+.woocommerce .quantity .qty { 
+    border: 1px solid #dc3522;
+    height: 37px;
+}
+.woocommerce li.product{
+	min-height: 365px;
+}
+span.page-numbers.current,
+.woocommerce nav.woocommerce-pagination ul li a{
+	margin: 3px !important;
+}
+ul.page-numbers a.next:hover,
+ul.page-numbers a.prev:hover,
+ul.page-numbers a.next,
+ul.page-numbers a.prev{ 
+    padding: 20px 17px !important;
+}
+.woocommerce a.added_to_cart { 
+    border-bottom: 1px solid #337ab7;
+}
+.woocommerce a.added_to_cart:hover { 
+    border-bottom: 1px solid #dc3522;
+}
+.woocommerce-page .all-blog-content-area{
+	height: 100% !important;
+}
+input#coupon_code{
+    border-color: #dc3522;
+    height: 34px;
+}
+
+.footer-top-area .single-footer .footer-social-media-area ul {
+    text-align: left;
+}
+
+.footer-top-area .single-footer .footer-social-media-area ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    color: #dddddd;
+    background: #000000;
+    border: 1px solid #dc3522;
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+    text-align: center;
+}
+.preview-2 .nivo-controlNav a{display:none;}
+.home-page-schedule-area{padding:90px 0;}
+.media-body.comments-body {
+    max-width: 845px;
+    width: 100%;
+}
+ 
+.blog-page-area {
+    background: rgba(0, 0, 0, 0) url('img/bg.png') no-repeat scroll center top;
+    padding: 100px 0;
+}
+.page-header { 
+    margin: 10px 0 20px; 
+}
+
+.no-results.not-found .search-form label{
+	position: relative;
+	max-width: 500px;
+     width: 100%;
+}
+.no-results.not-found .search-form input.search-field{
+	max-width: 500px;
+    width: 100%;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+.no-results.not-found .search-form i.fa{
+	position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 17px;
+}
+#page{
+	word-wrap: break-word;
+}
+.comment-form-cookies-consent{
+	display: none;
+} 
+figure { 
+    margin-bottom: 30px;
+}
+.page-sidebar-area {
+    margin-top: -20px;
+}
+section.no-results.not-found {
+    padding: 0 15px;
+}
+section.no-results.not-found h1.page-title{
+    color: #000;
+    font-weight: 600;
+}
+
+.credits{
+    background: url(img/dcsf-logo.png);
+    text-indent: -9009px;
+    width: 100px;
+    height: 25px;
+    display: inline-block;
+    background-size: 100px 25px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+.entry-header{
+	color: #000;
+}
