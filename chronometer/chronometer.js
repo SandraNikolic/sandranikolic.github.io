@@ -1,10 +1,10 @@
 const buttonElement = document.getElementById("button");
 const counterElement = document.getElementById("counter");
 let countSeconds;
-let start = true;
+let start = false;
 
 buttonElement.addEventListener("click", () => {
-    if (start) {
+    if (!start) {
      countSeconds = setInterval( () => {
      const counter = Number(counterElement.textContent);
      counterElement.textContent = counter +  1;
