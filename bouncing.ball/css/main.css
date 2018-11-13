@@ -1,0 +1,30 @@
+body {
+    background: lavenderblush;
+    width: 100%;
+    height: 100%;
+}
+p {
+    position: absolute;
+    left: 35%;
+}
+#ball {
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    background: red;
+    width: 150px;
+    height: 150px;
+    border-radius: 80%;
+    background-image: linear-gradient(blue, red, yellow, blue);
+}
+button {
+    color: red;
+    width: 200px;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    border: 2px solid saddlebrown;
+
+}
+
