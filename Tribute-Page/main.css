@@ -1,100 +1,194 @@
 body {
-    background: grey;
-  }
+  background: grey;
+}
+
+.container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1180px;
+}
+
+.row,
+.column {
+  box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.column {
+  position: relative;
+
+}
+
+.column+.column {
+  margin-left: 1.7%;
+}
+
+.column-1 {
+  width: 6.86666666667%;
+}
+
+.column-2 {
+  width: 15.3333333333%;
+}
+
+.column-3 {
+  width: 23.8%;
+}
+
+.column-4 {
+  width: 32.2666666667%;
+}
+
+.column-5 {
+  width: 40.7333333333%;
+}
+
+.column-6 {
+  width: 49.2%;
+}
+
+.column-7 {
+  width: 57.6666666667%;
+}
+
+.column-8 {
+  width: 66.1333333333%;
+}
+
+.column-9 {
+  width: 74.6%;
+}
+
+.column-10 {
+  width: 83.0666666667%;
+}
+
+.column-11 {
+  width: 91.5333333333%;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 3em;
+  margin: 0px;
+  letter-spacing: 0.5em;
+  padding-left: 10%;
+  text-shadow: 0 0 3px white, 0 0 5px #0000ff;
+}
+
+#title2 {
+  text-align: center;
+  margin-top: 0px;
+  font-family: 'Teko', sans-serif;
+  font-size: 2.5em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+#img-caption {
+  text-align: center;
+  margin-top: 2%;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5em;
+}
+
+#link1 {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 2em;
+}
+
+#tribute-link {
+  text-decoration: none;
+}
+
+#life {
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 4em;
+  letter-spacing: 2%;
+}
+
+#career {
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 4em;
+  letter-spacing: 2%;
+}
+
+ul {
+  padding-bottom: 5%;
+
+}
+
+li {
+  list-style-type: disc;
+  font-size: 1.5em;
+  line-height: 1em;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#note {
+  text-align: center;
+  margin-bottom: 5%;
+  font-weight: 500;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+a:link,
+a:visited {
+  background-color: rgb(160, 68, 160);
+  color: white;
+  padding: 2% 3%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Teko', sans-serif;
+  border: 2px solid black;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(54, 4, 54);
+}
+
+#personal {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Teko', sans-serif;
+}
+
+#inventions {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Teko', sans-serif;
+
+}
+
+/* Medium Devices and Desktops */
+@media only screen and (min-width: 1120px) {
   #title {
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-    font-size: 150px;
-    margin: 0px;
-    letter-spacing: 60px;
-    padding-left: 40px;
-    text-shadow: 0 0 3px white, 0 0 5px #0000ff;
+    font-size: 6em;
   }
-  #title2 {
-    text-align: center;
-    margin-top: 0px;
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-  }
-  img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: auto;
-  }
-  #img-caption {
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Teko', sans-serif;
-    font-size: 20px;
-  }
-  .row {
-    display: flex;
-    padding: 50px;
-  }
-  .column {
-    flex: 50%;
-    height: 850px;
-    margin: 0px;
-    box-shadow: 5px 10px 8px 10px #888888;
-    margin: 10px;
-  }
-  #link1 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 30px;
-  }
-  #tribute-link {
-    text-decoration: none;
-  }
-  #life {
-    text-align: center;
-    font-family: 'Teko', sans-serif;
-    font-size: 50px;
-    letter-spacing: 10px;
-  }
-  #career {
-    text-align: center;
-    font-family: 'Teko', sans-serif;
-    font-size: 50px;
-    letter-spacing: 10px;
-  }
-  li {
-    list-style-type: disc;
-    font-size: 20px;
-    line-height: 20px;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-  }
-  #note {
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 500;
-    font-size: 20px;
-  }
-  a:link,
-  a:visited {
-    background-color: rgb(160, 68, 160);
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Teko', sans-serif;
-    border: 2px solid black;
-  }
-  a:hover,
-  a:active {
-    background-color: rgb(54, 4, 54);
-  }
-  #personal {
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Teko', sans-serif;
-  }
-  #inventions {
-    text-align: center;
-    font-size: 30px;
-    margin-top: 40px;
-    font-family: 'Teko', sans-serif;
-  }
-  
+}
