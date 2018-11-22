@@ -1,94 +1,209 @@
 body {
-    /*background: #e1daed;*/
-    background: url("https://image.freepik.com/free-photo/jelly-beans-on-both-side-of-background_23-2147717507.jpg") no-repeat 
-    center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	overflow-y: scroll;
-  
+    background: url("https://image.freepik.com/free-photo/jelly-beans-on-both-side-of-background_23-2147717507.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: scroll;
+
 }
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+.row,
+.column {
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+    position: relative;
+    float: left;
+}
+
+.column+.column {
+    margin-left: 1.7%;
+}
+
+.column-1 {
+    width: 6.86666666667%;
+}
+
+.column-2 {
+    width: 15.3333333333%;
+}
+
+.column-3 {
+    width: 23.8%;
+}
+
+.column-4 {
+    width: 32.2666666667%;
+}
+
+.column-5 {
+    width: 40.7333333333%;
+}
+
+.column-6 {
+    width: 49.2%;
+}
+
+.column-7 {
+    width: 57.6666666667%;
+}
+
+.column-8 {
+    width: 66.1333333333%;
+}
+
+.column-9 {
+    width: 74.6%;
+}
+
+.column-10 {
+    width: 83.0666666667%;
+}
+
+.column-11 {
+    width: 91.5333333333%;
+}
+
+.column-12 {
+    width: 100%;
+}
+
 header {
     text-align: center;
-    font-size: 40px;
+    font-size: 2em;
     font-family: 'Roboto Slab', serif;
     letter-spacing: 20px;
 }
+
 section {
-   /*background-color:rgb(189, 235, 115);*/
-   width:900px;
-   margin-left:256px;
-   padding: 40px;
-   background: wheat;
+    background: wheat;
+    padding-bottom: 3%;
 }
+
 #description {
-    font-size: 25px;
-    margin-left:110px;
+    font-size: 1em;
+    margin-left: 8%;
     font-family: 'Baloo Tammudu', cursive;
-    font-size: 30px;
 }
-footer {
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    font-size:40px;
-}
+
 #personal {
     border: 2px solid salmon;
-    margin-bottom: 50px;
-    width:880px; 
-    padding:10px; 
+    margin-bottom: 5%;
+    width: 80%;
+    padding: 5%;
+    margin-left: 3.5%;
 }
+
 h4 {
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    font-size:20px;
+    font-size: 1.5em;
     font-weight: 500px;
 }
+
 #number {
-    margin-left: 20px;
-    width: 156px;
+    margin-left: 2.5%;
+    width: 20%;
 }
+
 #ways-shopping {
     border: 2px solid salmon;
-    margin-bottom: 50px;
-    width:880px;
-    padding:10px;
+    margin-bottom: 5%;
+    width: 80%;
+    margin-left: 3.5%;
+    padding: 5%;
 }
+
 #buying {
     border: 2px solid salmon;
-    margin-bottom: 50px;
-    width:880px; 
-    padding:10px;
+    margin-bottom: 5%;
+    width: 80%;
+    padding: 5%;
+    margin-left: 3.5%;
 }
+
 #type-shopping {
     border: 2px solid salmon;
-    margin-bottom: 50px;
-    width:880px;
-    padding:10px;
+    margin-bottom: 5%;
+    width: 80%;
+    padding: 5%;
+    margin-left: 3.5%;
 }
+
 #products {
     border: 2px solid salmon;
-    margin-bottom: 50px;
-    width:880px;
-    padding:10px;
+    margin-bottom: 5%;
+    width: 80%;
+    padding: 5%;
+    margin-left: 3.5%;
 }
+
 #products-input {
-    width: 300px;
-    height:100px;
+    width: 30%;
+    height: auto;
     resize: vertical;
-    margin-left: 300px;
+    margin-left: 33%;
 }
+
 #submit {
-    font-size:30px;
-    margin-left: 330px;
-    height: 60px;
-    min-width: 250px;
+    font-size: 1.5em;
+    height: auto;
     border-radius: 20%;
     background-image: linear-gradient(-90deg, red, yellow, red);
     font-family: 'Baloo Tammudu', cursive;
+    margin-left: 35%;
 }
+
 label {
     font-family: 'Karla', sans-serif;
-    font-size: 20px;
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+}
+
+/*Small devices and tablets*/
+@media only screen and (min-width: 500px) {
+    #description {
+        font-size: 1.3em;
+        margin-left: 15%;
+    }
+
+    #submit {
+        margin-left: 40%;
+    }
+}
+
+/* Medium Devices and Desktops */
+@media only screen and (min-width: 900px) {
+    #submit {
+        margin-left: 43%;
+    }
+
+    #description {
+        font-size: 2em;
+        margin-left: 20%;
+    }
 }

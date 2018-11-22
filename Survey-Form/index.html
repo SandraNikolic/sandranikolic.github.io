@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,104 +11,94 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Karla|Roboto+Slab" rel="stylesheet">
-    
+
 </head>
+
 <body>
-    <header>
-    <h1 id="title">-SURVEY FORM-</h1>
-    <img width="300px" height="auto" src="http://3.bp.blogspot.com/-KeZwlFfrHNc/U8C0tvBaR1I/AAAAAAAAleo/3s3F09wyWYY/s1600/american-groceries-in-the-philippines.jpg">
-</header>
+    <div class="container">
+        <header class="row">
+            <section class="column column-12">
+                <h1 id="title">SURVEY FORM</h1>
+                <img width="300px" height="auto" src="http://3.bp.blogspot.com/-KeZwlFfrHNc/U8C0tvBaR1I/AAAAAAAAleo/3s3F09wyWYY/s1600/american-groceries-in-the-philippines.jpg">
+            </section>
+        </header>
 
-<main>
-    <section>
-       <!--<img style="float: right; margin-top:20px;" width="800px" height="auto" src="https://i.pinimg.com/originals/ac/96/08/ac9608d0c7083c8c891d3eecafeb3b2e.png">-->
-       
-    <p id="description">Let us know more about your shop groceries habits</p>
+        <main class="row">
+            <section class="column column-12">
+                <p id="description">Let us know more about your shop habits!</p>
+                <form id="survey-form" method="get" action="#">
+                    <section id="personal">
+                        <h4>PERSONAL INFORMATIONS</h4>
+                        <section id="formName">
+                            <label>Enter your personal informations:</label>
+                            <br />
+                            <br />
+                            <label id="name-label" for="name">Name</label>
+                            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                        </section>
+                        <br />
+                        <section id="formEmail">
+                            <label id="email-label" for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+                        </section>
+                        <br />
 
-    <form id="survey-form" method="get" action="#">
-        <div id="personal">
-            <h4>PERSONAL INFORMATIONS</h4>
-            <div id="formName">
-                <label>Enter your personal informations:</label>
-                <br/>
-                <br/>
-    <label id="name-label" for="name">Name</label>
-    <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                        <section id="formNumber">
+                            <label id="number-label" for="number">Age</label>
+                            <input id="number" type="number" name="number" placeholder="Age" min="1" max="150" required>
+                        </section>
+                    </section>
+                    <section id="ways-shopping">
+                        <h4>FAVOURITE METHOD OF SHOPPING</h4>
+                        <label id="text-shopping">Favourite method for shopping: </label>
+                        <br />
+                        <br />
+                        <select id="dropdown" name="optionsShopping">
+                            <option disabled value>Select one option</option>
+                            <option value="online">Online shopping</option>
+                            <option value="traditional">Traditional shopping</option>
+                        </select>
+                    </section>
+                    <section id="buying">
+                        <h4>YOUR RESPONSIBILITY FOR SHOPPING</h4>
+                        <label id="who-buying">Who is in your family taking decisions about shopping?</label>
+                        <br />
+                        <br />
+                        <input type="radio" name="shopping" value="Myself">Myself<br>
+                        <input type="radio" name="shopping" value="Someone else">Someone else<br>
+                        <input type="radio" name="shopping" value="Me and someone else">Me and someone else
+                    </section>
+
+                    <section id="type-shopping">
+                        <h4>GROCERIES SHOPS</h4>
+                        <label id="groceries">Where are you buying your groceries usually?</label>
+                        <br />
+                        <br />
+                        <input type="checkbox" name="groceries" value="departmentStore">Department store <br>
+                        <input type="checkbox" name="groceries" value="supermarket" checked> Supermarket<br>
+                        <input type="checkbox" name="groceries" value=" grocer">Grocer<br>
+                        <input type="checkbox" name="groceries" value="butcher" checked>Butcher<br>
+                        <input type="checkbox" name="groceries" value="baker">Baker<br>
+                        <input type="checkbox" name="groceries" value=" fishmonger" checked>Fishmonger<br>
+                        <input type="checkbox" name="groceries" value=" teaShop">Tea shop<br>
+                    </section>
+                    <section id="products">
+                        <h4>MAIN GROCERIES IN YOUR HOME</h4>
+                        <label id="products-text">Write here which groceries are you using in your home everyday?</label>
+                        <br />
+                        <br />
+                        <textarea id="products-input" name="productsInput" placeholder="Enter here everyday groceries in your home"></textarea>
+                    </section>
+                    <section>
+                        <button id="submit" type="submit">SUBMIT</button>
+                    </section>
+                </form>
+            </section>
+        </main>
+        <footer class="row">
+            <h3 class="column column-12">Thank you for Your time!</h3>
+        </footer>
     </div>
-    <br/>
-    <div id="formEmail">
-    <label id="email-label" for="email">Email</label>
-    <input id="email" type="email" name="email" placeholder="Enter your email address" required>
-    </div>
-     <br/>
-    
-    <div id="formNumber">
-        <label id="number-label" for="number">Age</label>
-           <input id="number" type="number" name="number" placeholder="Age" min="1" max="150" required>
-           </div>
-        </div>
-    
-        
-
-           <div id="ways-shopping">
-               <h4>FAVOURITE METHOD OF SHOPPING</h4>
-               <label id="text-shopping">Favourite method for shopping: </label>
-               <br/>
-               <br/>
-               <select id="dropdown" name="optionsShopping">
-                   <option disabled value >Select one option</option>
-                   <option value="online">Online shopping</option>
-                   <option value="traditional">Traditional shopping</option>
-               </select>
-           </div>
-           <div id="buying">
-                <h4>YOUR RESPONSIBILITY FOR SHOPPING</h4>
-                <label id="who-buying">Who is in your family taking decisions about shopping?</label>
-                <br/>
-                <br/>
-                <input type="radio" name="shopping" value="Myself">Myself<br>
-   <input type="radio" name="shopping" value="Someone else">Someone else<br>
-   <input type="radio" name="shopping" value="Me and someone else">Me and someone else
-            </div>
-           
-           <div id="type-shopping">
-               <h4>GROCERIES SHOPS</h4>
-            
-               <label id="groceries">Where are you buying your groceries usually?</label>
-               <br/>
-               <br/>
-                <input type="checkbox" name="groceries" value="departmentStore">Department store <br>
-                <input type="checkbox" name="groceries" value="supermarket" checked> Supermarket<br>
-                <input type="checkbox" name="groceries" value=" grocer">Grocer<br>
-                <input type="checkbox" name="groceries" value="butcher" checked>Butcher<br>
-                <input type="checkbox" name="groceries" value="baker">Baker<br>
-                <input type="checkbox" name="groceries" value=" fishmonger" checked>Fishmonger<br>
-                <input type="checkbox" name="groceries" value=" teaShop">Tea shop<br>
-           </div>
-           <div id="products">
-               <h4>MAIN GROCERIES IN YOUR HOME</h4>
-               <label id="products-text">Write here which groceries are you using in your home everyday?</label>
-               <br/>
-               <br/>
-               <textarea id="products-input" name="productsInput" placeholder="Enter here everyday groceries in your home"></textarea>
-           </div>
-           <div>
-               <button id="submit" type="submit">SUBMIT</button>
-           </div>
-</form>
-</section>
-
-</main>
-<footer>
-        <h3>Thank you for Your time!</h3>
-</footer>
-
-
-
-
-
-
-
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
 </body>
+
 </html>
