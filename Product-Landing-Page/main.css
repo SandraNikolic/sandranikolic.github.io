@@ -201,47 +201,14 @@ a {
     text-decoration: none;
     font-weight: 600;
 }
-  @media only screen and (max-width: 600px) {
-    #nav-bar {
-      background-color: lightblue;
-    }
-  }
-  #video {
-    margin-left: 37%;
-  }
-
-  a:link,
-  a:visited {
-    font-weight: 600;
-    color: rgb(86, 58, 248);
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  a:hover,
-  a:active {
-    font-weight: 600;
-    color: rgb(86, 58, 248);
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  footer {
-    font-size: 2em;
-    background: #f4a236;
-    height: auto;
-  }
-  
-  #signature {
-    font-family: 'Sacramento', cursive;
-    margin-left: 2%;
-    font-size: 1em;
-  }
-  @media only screen and (max-width: 550px) {
+ 
+  @media only screen and (max-width: 640px) {
     header {
       padding-left: 2%;
       font-size: 1em;
+    }
+    h1 {
+      font-size: 1.5em;
     }
     #header-img {
       width: 30%;
@@ -257,7 +224,7 @@ a {
       margin-left: 0%;
     }
     table {
-      margin-left: 18%;
+      margin-left: 10%;
     }
     iframe {
       width: 280px;
@@ -272,13 +239,13 @@ a {
       margin-left: 15%;
     }
   }
-  @media only screen and (min-width: 550px) and ( max-width: 834px) {
+  @media only screen and (min-width: 640px) and ( max-width: 1000px) {
     header {
       margin-left: 0;
     }
     h1 {
-      font-size: 2.5em;
-      margin-left: 4%;
+      font-size: 2em;
+      margin-left: 19%;
     }
     #header-img {
       width: 25%;
