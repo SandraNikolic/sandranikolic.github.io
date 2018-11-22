@@ -1,134 +1,215 @@
 body {
-    background: rgb(139, 206, 133);
-    background: url('https://i.pinimg.com/236x/ab/66/8f/ab668f583d66ee0baa78707037323031--power-point-templates-ppt-presentation.jpg')
-      no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow-y: scroll;
-    background: #f7eed4;
+  background: url('images/s.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
   }
-  #header {
-    width: 1500px;
-    height: 350px;
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+}
+.row,
+.column {
+    box-sizing: border-box;
+}
+.row:before, 
+.row:after {
+    content: "";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+.column {
+    position: relative;
+    
+}
+.column + .column {
+    margin-left: 1.7%;
+}
+.column-1 {
+    width: 6.86666666667%;
+}
+.column-2 {
+    width: 15.3333333333%;
+}
+.column-3 {
+    width: 23.8%;
+}
+.column-4 {
+    width: 32.2666666667%;
+}
+.column-5 {
+    width: 40.7333333333%;
+}
+.column-6 {
+    width: 49.2%;
+}
+.column-7 {
+    width: 57.6666666667%;
+}
+.column-8 {
+    width: 66.1333333333%;
+}
+.column-9 {
+    width: 74.6%;
+}
+.column-10 {
+    width: 83.0666666667%;
+}
+.column-11 {
+    width: 91.5333333333%;
+}
+.column-12 {
+    width: 100%;
+}
+  header {
+    height: auto;
+    font-size: 1.5em;
+    margin-left: 16%;
   }
   #header-img {
-    border-radius: 50%;
-    float: left;
-    width: 200px;
+    width: 20%;
     height: auto;
+    border-radius: 50%;
+    margin-left: 26%;
   }
   h1 {
-    float: right;
-    font-size: 60px;
+    font-size: 3em;
     font-family: 'Fredoka One', cursive;
-    margin: 0;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    margin-right: 40px;
+    margin-top: 2%;
+    margin-bottom: 4%;
   }
-  p {
-    text-align: center;
-    margin: 0;
-    margin-right: 250px;
-    font-size: 30px;
-  }
-  ul {
-    margin-left: 440px;
+  nav {
+    margin-left: 27%;
+   
   }
   li {
-    display: inline;
-    font-size: 30px;
-    padding: 40px;
+    display: inline-block;
+    font-size: 2em;
+    padding: 2%;
     text-align: center;
-  }
-  #honey {
-    font-size: 30px;
-    font-family: 'Averia Serif Libre', cursive;
-    margin-left: 50px;
   }
   .nav-link:link,
   .nav-link:visited {
     background-color: #f4a236;
     color: white;
-  
     text-align: center;
     text-decoration: none;
     display: inline-block;
   }
-  
   .nav-link:hover,
   .nav-link:hover:active {
     background-color: rgb(231, 148, 80);
   }
   h2 {
     text-align: center;
-    margin-right: 90px;
+    margin-right: 5%;
   }
   table {
     font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 1380px;
+    width: 50%;
+    margin-left: 25%;
+    border: 4px solid black;
+    background: #f7eed4;
   }
   
   td,
   th {
     border: 1px solid #f7eed4;
     text-align: left;
-    padding: 8px;
+    padding: 2%;
+    border: 4px solid black;
   }
   
   tr:nth-child(even) {
     background-color: #fdf474;
   }
-  #jams {
-    font-size: 30px;
+  #honey {
+    background: url('images/hon.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.3em;
     font-family: 'Averia Serif Libre', cursive;
-    margin-left: 60px;
+    margin-left: 3%;
+    padding: 2%;
+    margin: 5% 5%;
+  }
+  #jams {
+    background: url('images/jams.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.3em;
+    font-family: 'Averia Serif Libre', cursive;
+    margin-left: 3%;
+    padding: 2%;
+    margin: 5% 5%;
   }
   #juices {
-    font-size: 30px;
+    background: url('images/juices.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.3em;
     font-family: 'Averia Serif Libre', cursive;
-    margin-left: 60px;
+    margin-left: 3%;
+    padding: 2%;
+    margin: 5% 5%;
   }
   #buying {
-    font-size: 30px;
+    font-size: 1.3em;
     font-family: 'Averia Serif Libre', cursive;
-    margin-left: 60px;
+    margin-left: 3%;
   }
   #submit {
-    font-size: 30px;
-    margin-left: 550px;
-    height: 60px;
-    min-width: 250px;
+    font-size: 1em;
+    height: auto;
     border-radius: 20%;
     background-image: linear-gradient(orange, yellow, orange);
     font-family: 'Baloo Tammudu', cursive;
-    display: flex;
     text-align: center;
+    margin-left: 7%;
+    margin-top: 5%;
   }
-  #nav-bar {
-    background: rgb(245, 196, 196);
-    color: #f1f1f1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    background: #f7eed4;
+  #form {
+    margin-left: 35%;
+  }
+  #videoSection {
+    margin-bottom: 5%;
   }
   #vid {
-    font-size: 30px;
+    font-size: 1.6em;
     font-family: 'Averia Serif Libre', cursive;
   }
+  iframe {
+    margin-left: 25%;
+  }
+#links {
+  text-align: center;
+}
+#signature {
+  font-family: 'Sacramento', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0;
+}
+a:hover {
+  color: rgb(86, 58, 248);
+  background: plum;
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
   @media only screen and (max-width: 600px) {
     #nav-bar {
       background-color: lightblue;
     }
   }
   #video {
-    margin-left: 475px;
+    margin-left: 37%;
   }
+
   a:link,
   a:visited {
     font-weight: 600;
@@ -147,22 +228,75 @@ body {
     display: inline-block;
   }
   footer {
-    font-size: 18px;
+    font-size: 2em;
     background: #f4a236;
+    height: auto;
   }
   
-  h3 {
-    font-family: 'Averia Serif Libre', cursive;
-    font-size: 40px;
-    margin-left: 485px;
-    padding-top: 20px;
-  }
   #signature {
     font-family: 'Sacramento', cursive;
-    margin-left: 60px;
-    font-size: 40px;
+    margin-left: 2%;
+    font-size: 1em;
   }
-  .contact {
-    padding: 10px;
+  @media only screen and (max-width: 550px) {
+    header {
+      padding-left: 2%;
+      font-size: 1em;
+    }
+    #header-img {
+      width: 30%;
+    }
+    nav {
+      margin-left: 0%;
+    }
+    nav ul li {
+      display: block;
+    }
+    table {
+      font-size: 0.5em;
+      margin-left: 0%;
+    }
+    table {
+      margin-left: 18%;
+    }
+    iframe {
+      width: 280px;
+      height: 157.5px;
+      margin-left: 11%;
+      
+    }
+    footer {
+      font-size: 1em;
+    }
+    #form {
+      margin-left: 15%;
+    }
   }
-  
+  @media only screen and (min-width: 550px) and ( max-width: 834px) {
+    header {
+      margin-left: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-left: 4%;
+    }
+    #header-img {
+      width: 25%;
+      margin-left: 36%;
+    }
+    nav {
+      margin-left: 15%;
+    }
+    table {
+      font-size: 0.5em;
+      margin-left: 25%;
+    }
+    iframe {
+      width: 330px;
+      height: 187.5px;
+      margin-left: 27%;  
+    }
+    #form {
+      margin-left: 28%;
+    }
+  }
