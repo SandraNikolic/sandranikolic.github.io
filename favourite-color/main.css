@@ -1,0 +1,116 @@
+body {
+    background: url("images/fourth.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Patua One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 15%;
+}
+
+div {
+    margin-left: 22%;
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 400px) {
+    body {
+        background: whitesmoke;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 33%;
+    }
+
+    h3 {
+        margin-left: 15%;
+        font-size: 1.2em;
+        margin-top: 45%;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    body {
+        background: whitesmoke;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    div {
+        margin-left: 30%;
+    }
+
+    h3 {
+        margin-left: 15%;
+        margin-top: 45%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    body {
+        background: whitesmoke;
+    }
+
+    div {
+        margin-left: 35%;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2.5em
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    div {
+        margin-left: 35%;
+    }
+
+    h1 {
+        font-size: 2.5em
+    }
+}
+
+@media (min-width: 900px) {
+    div {
+        margin-left: 43%;
+    }
+
+    h3 {
+        margin-left: 35.5%;
+        font-size: 2em;
+        margin-top: 15%;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1500px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    h3 {
+        margin-top: 12%;
+    }
+}
