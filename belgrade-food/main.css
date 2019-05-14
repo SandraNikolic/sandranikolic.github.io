@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    background-color: yellow;
     background-image: url('images/photo1.jpg');
+    background-color: rgb(204, 155, 98);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat, repeat;
@@ -11,9 +11,9 @@ header {
     text-align: center;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     /*background: rgb(252, 236, 236);*/
-    background: yellowgreen;
+    background: rgb(204, 155, 98);
 }
 
 h1 {
@@ -31,7 +31,7 @@ img {
     position: relative;
     border-radius: 50%;
     border: 2px double black;
-    box-shadow: inset 0 0 0 25px #f3f728;
+    box-shadow: inset 0 0 0 25px #B54DFF;
 }
 
 img:hover {
@@ -46,16 +46,12 @@ p#instruction {
     position: relative;
     left: 37%;
     margin-top: 3%;
-    background: gray;
     width: 27%;
     text-align: center;
     font-size: 1.2em;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-#instruction:hover {
-    background: rgb(116, 201, 48);
-}
 
 button {
     left: 45%;
@@ -63,8 +59,9 @@ button {
     margin-top: 1.6%;
     font-size: 1.5em;
     border-radius: 10%;
-    background-color: gray;
-    border: 2px solid;
+    background-color: rgb(204, 155, 98);
+    outline: none;
+    border: none;
     font-weight: 90;
     margin-bottom: 2%;
     /*box-shadow: 0px 5px 5px lime, 0px 10px 8px red, 0px 15px 8px green;*/
@@ -137,32 +134,29 @@ div.link {
     padding-bottom: 2%;
 }
 
-input {
-    background: rgb(241, 241, 158);
-    border: 2px solid black;
-}
 
 input.addButt {
     border-radius: 50%;
     font-size: 1.5em;
-    background: lightgreen;
-    border: 2px solid black;
+    background: #B54DFF;
+    border: none;
+    outline: none;
     display: block;
     margin-left: 22%;
     margin-top: 2%;
 }
 
 footer {
-    background: black;
+    background: rgb(204, 155, 98);
     bottom: 0;
-    position: fixed;
+    margin: 0 auto;
+    width: 250px;
     left: 43%;
-    color: white;
+    font-weight: 900;
 }
 
 footer:hover {
     height: 3%;
-    font-style: italic;
 }
 
 /* Media queries*/
