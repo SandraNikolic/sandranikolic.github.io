@@ -95,7 +95,7 @@ button:hover {
 }
 
 .link {
-    background: rgb(40, 201, 40);
+    background: #B54DFF;
     /*transition: width 2s, height 2s, transform 2s;*/
     border: 2px solid white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
