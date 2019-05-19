@@ -1,0 +1,124 @@
+/* piano css */
+html,
+body {
+    height: 100%;
+}
+
+h1 {
+    color:white;
+    font-weight: 700;
+}
+
+.music-part {
+    font-style: italic;
+}
+
+h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 0.1 rem;
+}
+
+#stage {
+    background: url('img/bbh-singapore-1417499-unsplash.jpg');
+    background-size: cover;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#stage-caption {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.first-row {
+    padding: 8rem 0;
+    overflow: hidden;
+}
+
+.two-section {
+    background: #262f36;
+    color: white;
+    padding-bottom: 8rem;
+}
+
+.center {
+    text-align: center
+}
+
+h6 {
+    color: #333;
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lession {
+    padding-top: 4rem;
+}
+
+.students {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.four-section {
+    margin-top: 8rem;
+    background: #f0f0f0;
+}
+
+.about {
+    padding-top: 5rem;
+}
+
+.hands {
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.action {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.blockquote {
+    font-size: 1.6rem;
+    color: #333;
+    border: none;
+    padding: 0;
+}
+
+.blockquote-footer {
+    margin: 1rem 0 0;
+}
+
+.padd-bott {
+    padding-bottom: 2rem;
+}
+
+.padd-top {
+    padding-bottom: 8rem;
+}
+
+.six-section {
+    padding: 8rem;
+}
+
+#footer-main {
+    background: #222;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2.5rem;
+}
