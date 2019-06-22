@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1950px) {
-  div.contentt {
+  div.content {
     width: 800px;
   }
 }
@@ -15,7 +15,7 @@ h2 {
   font-family: Impact, Charcoal, sans-serif;
 }
 
-.contentt {
+.content {
   margin: 10px;
   border: 2px dashed lightgray;
   width: 100%;
@@ -30,24 +30,32 @@ form {
 
 #input {
   margin: 10px 0;
-  padding: 10px 10px;
-  width: 100%;
+  padding: 10px;
+  width: 96%;
   border: none;
   border-bottom: 2px solid red;
 }
 
-#button {
+h2 {
+  text-align: center;
+}
+.button {
   background-color: #f7383f;
   color: white;
   padding: 10px 20px;
   font-size: 12px;
   border: black;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 900;
 }
 
 #filter {
   margin: 10px 0;
   padding: 10px 10px;
-  width: 100%;
+  width: 96%;
   border: none;
   border-bottom: 2px solid red;
 }
@@ -88,9 +96,10 @@ clearButton {
   color: red;
 }
 
-span {
+p {
   display: inline-block;
   overflow: auto;
   overflow-wrap: break-word;
   word-break: break-word;
+  width: 80px;
 }

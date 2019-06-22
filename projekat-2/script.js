@@ -24,12 +24,12 @@ function writeNote() {
 
   if (typeof(Storage) !== "undefined") {
     for (let i = 0; i < arrayX.length; i++) {
-     let setOfNotes = document.createElement("DIV");
+      let setOfNotes = document.createElement("div");
       setOfNotes.className = "oneNote";
-     let noteSpan = document.createElement("SPAN");
-      let tasksCont = document.createTextNode(arrayX[i]);
-      noteSpan.appendChild(tasksCont);
-      setOfNotes.appendChild(noteSpan);
+      let noteElement = document.createElement("p");
+      let tasksContent = document.createTextNode(arrayX[i]);
+      noteElement.appendChild(tasksContent);
+      setOfNotes.appendChild(noteElement);
       let deleteNote = document.createElement("clearButton");
       deleteNote.className = "fas fa-times";
       deleteNote.title = "Delete this task";
@@ -40,7 +40,7 @@ function writeNote() {
     }
   } 
   else {
-    alert("Browser doesn't support Web Storage");
+    alert("Your browser doesn't support Web Storage");
   }
 }
 
@@ -50,7 +50,7 @@ function filterSearch() {
   let notesAll = document.getElementById("allNotes").getElementsByTagName("DIV");
 
   for (let i = 0; i < notesAll.length; i++) {
-    let all = notesAll[i].getElementsByTagName("SPAN")[0];
+    let all = notesAll[i].querySelector("p");
     if (all.innerHTML.toUpperCase().indexOf(filterNote) > -1) {
       notesAll[i].style.display = "flex";
     } else {
@@ -77,7 +77,7 @@ function deleteTask(event) {
     let noteParent = event.target.parentElement;
 
     for (let i = 0; i < arrayX.length; i++) {
-      if (noteParent.getElementsByTagName("SPAN")[0].innerHTML === arrayX[i]) {
+      if (noteParent.querySelector("p").innerHTML === arrayX[i]) {
         arrayX.splice(i, 1);
         localStorage.setItem("task", arrayX);
       }

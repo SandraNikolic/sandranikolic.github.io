@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Task manager</title>
+  <title>Your Tasks</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
 </head>
 
 <body>
-  <div class="contentt">
+  <div class="content">
     <form name="tasksLi">
-      <h2>PERSONAL NOTE</h2>
+      <h2>ADD NOTE</h2>
       <input id="input" name="newNotee" type="text" placeholder="New Task" autofocus>
       <br>
-      <input id="button" name="newButton" class="buttonOne" type="button" value="ADD TASK" onclick="newNote()">
+      <input id="button" name="newButton" class="buttonOne button" type="button" value="ADD TASK" onclick="newNote()">
     </form>
     <hr>
     <form name="filterForm">
@@ -28,7 +28,7 @@
       <div id="allNotes">
       </div>
       <br>
-      <input id="clear" name="clearButton" type="button" value="CLEAR TASKS" onclick="clearTasks()">
+      <input id="clear" name="clearButton" class="button" type="button" value="CLEAR TASKS" onclick="clearTasks()">
     </form>
   </div>
 </body>
