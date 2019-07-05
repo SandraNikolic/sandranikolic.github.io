@@ -1,0 +1,112 @@
+[
+    {
+        "id": "0",
+        "productName": "Apples",
+        "image": "apple1.jpg",
+        "family": "Rutaceae",
+        "specie": "M. domestica",
+        "originCountry": "🇷🇸 Serbia",
+        "vitamins": "Vitamin C, Potassium",
+        "price": "1",
+        "description": "An apple is a sweet, edible fruit produced by an apple tree. Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today.",
+        "source": "https://en.wikipedia.org/wiki/Apple"
+    },
+    {
+        "id": "1",
+        "productName": "Oranges",
+        "image": "orange.jpg",
+        "family": "Rutaceae",
+        "species": "Citrus aurantium",
+        "originCountry": "🇷🇸 Greece",
+        "vitamins": "Vitamin C",
+        "price": "1.5/kg",
+        "description": "The orange is the fruit of the citrus species Citrus × sinensis in the family Rutaceae. It is also called sweet orange, to distinguish it from the related Citrus × aurantium, referred to as bitter orange. The sweet orange reproduces asexually; varieties of sweet orange arise through mutations.",
+        "source": "https://en.wikipedia.org/wiki/Orange_(fruit)"
+    },
+    {
+        "id": "2",
+        "productName": "Plums",
+        "image": "plum.jpg",
+        "family": "Rutaceae",
+        "species": "Prunus",
+        "originCountry": "🇷🇸 Serbia",
+        "vitamins": "Vitamin K, Vitamin A, Copper",
+        "price": "1/kg",
+        "description": "A plum is a fruit of the subgenus Prunus of the genus Prunus. The subgenus is distinguished from other subgenera in the shoots having terminal bud and solitary side buds, the flowers in groups of one to five together on short stems, and the fruit having a groove running down one side and a smooth stone.",
+        "source": "https://en.wikipedia.org/wiki/Plum"
+    },
+    {
+        "id": "3",
+        "productName": "Strawberries",
+        "image": "strawberry3.jpg",
+        "family": "Rosaceae",
+        "species": "Fragaria × ananassa",
+        "originCountry": "🇫🇷 France",
+        "vitamins": "Vitamin C, Manganese, Vitamin B9",
+        "price": "3/kg",
+        "description": "The garden strawberry is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness.",
+        "source": "https://en.wikipedia.org/wiki/Strawberry"
+    },
+    {
+        "id": "4",
+        "productName": "Pineapple",
+        "image": "pineapple.jpg",
+        "family": "Bromeliaceae",
+        "species": "A. comosus",
+        "originCountry": "🇧🇷 Brazil",
+        "vitamins": "Vitamain B-6, Thiamin, Riboflavin",
+        "price": "2/peace",
+        "description": "The pineapple is a tropical plant with an edible fruit, also called pineapples, and the most economically significant plant in the family Bromeliaceae. Pineapples may be cultivated from the offset produced at the top of the fruit, possibly flowering in five to ten months and fruiting in the following six months",
+        "source": "https://en.wikipedia.org/wiki/Pineapple"
+    },
+    {
+        "id": "5",
+        "productName": "Peaches",
+        "image": "peach2.jpg",
+        "family": "Bromeliaceae",
+        "species": "A. comosus",
+        "originCountry": "🇷🇸 Serbia",
+        "vitamins": "Vitamain B-6, Thiamin, Riboflavin",
+        "price": "1.5/kg",
+        "description": "The peach is a deciduous tree native to the region of Northwest China between the Tarim Basin and the north slopes of the Kunlun Mountains, where it was first domesticated and cultivated. It bears an edible juicy fruit called a peach or a nectarine",
+        "source": "https://en.wikipedia.org/wiki/Peach"
+    },
+    {
+        "id": "6",
+        "productName": "Blueberries",
+        "image": "blueberries.jpg",
+        "family": "Ericaceae",
+        "species": "Vaccinium myrtillus",
+        "originCountry": "🇷🇸 Serbia",
+        "vitamins": "Vitamin C, Vitamin B6, Phytonutrient",
+        "price": "4/kg",
+        "description": "Blueberries are perennial flowering plants with blue– or purple–colored berries. They are classified in the section Cyanococcus within the genus Vaccinium. Vaccinium also includes cranberries, bilberries, huckleberries and Madeira blueberries.",
+        "source": "https://en.wikipedia.org/wiki/Blueberry"
+    },
+    {
+        "id": "7",
+        "productName": "Lemon",
+        "image": "lemon.jpg",
+        "family": "Rutaceae",
+        "species": "C. limon",
+        "originCountry": "🇬🇷 Greece",
+        "vitamins": "Vitamin C, Folate, Potassium",
+        "price": "1.5/kg",
+        "description": "The lemon, Citrus limon Osbeck, is a species of small evergreen tree in the flowering plant family Rutaceae, native to South Asia, primarily North eastern India.",
+        "source": "https://en.wikipedia.org/wiki/Lemon"
+    },
+    {
+        "id": "8",
+        "productName": "Kiwis",
+        "image": "kiwi.jpg",
+        "family": "Actinidiaceae",
+        "species": "A. deliciosa",
+        "originCountry": "🇬🇷 Greece",
+        "vitamins": "Vitamin C, Folate, Vitamin B3",
+        "price": "2/kg",
+        "description": "Kiwifruit, or Chinese gooseberry, is the edible berry of several species of woody vines in the genus Actinidia. The most common cultivar group of kiwifruit is oval, about the size of a large hen's egg.",
+        "source": "https://en.wikipedia.org/wiki/Kiwifruit"
+    }
+    
+
+]

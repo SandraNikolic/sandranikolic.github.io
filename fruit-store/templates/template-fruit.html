@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Nunito+Sans" rel="stylesheet">
+
+    <title>{%PRODUCTNAME%} /// The Fruit Store!</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 6rem 4rem 10rem;
+            line-height: 1.7;
+            font-family: "Nunito Sans", sans-serif;
+            color: #555;
+            min-height: 100vh;
+            background: linear-gradient(to bottom right, #ac5484, #4ca2cd);
+            /*background-image: url("../data/img/fruits5.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;*/
+        }
+
+        h1 {
+            font-family: "Bungee Inline", sans-serif;
+            font-weight: 400;
+            font-size: 6rem;
+            color: white;
+            /*transform: skewY(-5deg);*/
+            margin-bottom: 6rem;
+            text-align: center;
+            position: relative;
+            word-spacing: 3px;
+        }
+
+        h1::before {
+            content: '';
+            display: block;
+            height: 65%;
+            width: 58%;
+            position: absolute;
+            top: 105%;
+            left: 50%;
+            /*background: linear-gradient(to bottom right, #ac5484, #4ca2cd);*/
+            opacity: .8;
+            z-index: -1;
+            transform: skewY(370deg) translate(-50%, -50%);
+        }
+
+        .container {
+            width: 110rem;
+            margin: 0 auto;
+        }
+
+        .fruit {
+            width: 70rem;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.25);
+            position: relative;
+        }
+
+        .fruit__hero {
+            position: relative;
+        }
+
+        .fruit__hero::before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to right bottom, #54a759, #d3d46a);
+            opacity: .1;
+        }
+
+        .fruit__img {
+            width: 100%;
+            display: block;
+        }
+
+        .fruit__price {
+            position: absolute;
+            top: -3rem;
+            right: -3rem;
+            z-index: 100;
+            background: linear-gradient(to right bottom, #54a759, #d3d46a);
+            height: 14rem;
+            width: 14rem;
+            border: 6px solid white;
+            border-radius: 50%;
+            transform: rotate(15deg);
+            box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+            color: white;
+            font-size: 3rem;
+            font-family: "Bungee Inline", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fruit__back:link,
+        .fruit__back:visited {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            z-index: 1;
+            border: 2px solid white;
+            border-radius: 100rem;
+            padding: 0 2rem;
+            transition: all .3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .fruit__back:hover,
+        .fruit__back:active {
+            background-color: white;
+            color: #555;
+        }
+
+        .fruit__name {
+            background: linear-gradient(to right, #54a759, #d3d46a);
+            padding: 1.75rem 1rem;
+            font-family: "Bungee Inline", sans-serif;
+            font-weight: 400;
+            font-size: 3.25rem;
+            color: white;
+            text-align: center;
+            word-spacing: 2px;
+        }
+
+        .fruit__details {
+            background-color: #eee;
+            padding: 4rem 6rem;
+            font-size: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.75rem;
+        }
+
+        .fruit__description {
+            padding: 5rem 6rem;
+            font-size: 1.6rem;
+            line-height: 1.8;
+        }
+
+        .fruit__link:link,
+        .fruit__link:visited {
+            display: block;
+            background-color: #d3d46a;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s;
+        }
+
+        .fruit__link:hover,
+        .fruit__link:active {
+            background-color: #54a759;
+        }
+
+        .fruit__source {
+            padding: 0 6rem 3rem;
+            color: #999;
+            font-size: 1.2rem;
+        }
+
+        .fruit__source a:link,
+        .fruit__source a:visited {
+            color: #999;
+        }
+
+        .fruit__source a:hover,
+        .fruit__source a:active {
+            color: #555;
+        }
+
+        .emoji-left {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        .emoji-right {
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>The Fruit Store!</h1>
+        <figure class="fruit">
+            <p class="fruit__price">${%PRICE%}</p>
+            <a href="/products" class="fruit__back"><span class="emoji-left">👈</span>Back</a>
+            <div class="fruit__hero">
+                <img src="/{%IMAGE%}" alt="" class="fruit__img">
+            </div>
+            <h2 class="fruit__name">{%PRODUCTNAME%}</h2>
+            <div class="fruit__details">
+                <p><span class="emoji-left">🌳</span> {%FAMILY%}</p>
+                <p><span class="emoji-left">💊</span> {%VITAMINS%}</p>
+                <p><span class="emoji-left">🍰</span> {%PRODUCTNAME%} cakes are the best</p>
+                <p><span class="emoji-left">🍹</span> Make your own {%PRODUCTNAME%} coctail</p>
+            </div>
+            <p class="fruit__description">
+                {%DESCRIPTION%}
+            </p>
+            <p class="fruit__source">Source: <a href="{%SOURCE%}"
+                    target="_blank">{%SOURCE%}</a></p>
+            <a href="#" class="fruit__link">Buy now for only ${%PRICE%} <span class="emoji-right"> 😍</span></a>
+        </figure>
+    </div>
+</body>
+
+</html>

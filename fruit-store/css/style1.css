@@ -1,0 +1,200 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 6rem 4rem 10rem;
+    line-height: 1.7;
+    font-family: "Nunito Sans", sans-serif;
+    color: #555;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+}
+
+h1 {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+    color: white;
+    transform: skewY(-5deg);
+    margin-bottom: 6rem;
+    text-align: center;
+    position: relative;
+    word-spacing: 3px;
+}
+
+h1::before {
+    content: '';
+    display: block;
+    height: 65%;
+    width: 58%;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+    opacity: .8;
+    z-index: -1;
+    transform: skewY(370deg) translate(-50%, -50%);
+}
+
+.container {
+    width: 110rem;
+    margin: 0 auto;
+}
+
+.fruit {
+    width: 70rem;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.fruit__hero {
+    position: relative;
+}
+
+.fruit__hero::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right bottom, #67b26f, #4ca2cd);
+    opacity: .4;
+}
+
+.fruit__img {
+    width: 100%;
+    display: block;
+}
+
+.fruit__price {
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    z-index: 100;
+    background: linear-gradient(to right bottom, #67b26f, #4ca2cd);
+    height: 14rem;
+    width: 14rem;
+    border: 6px solid white;
+    border-radius: 50%;
+    transform: rotate(15deg);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 3rem;
+    font-family: "Bungee Inline", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fruit__back:link,
+.fruit__back:visited {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1;
+    border: 2px solid white;
+    border-radius: 100rem;
+    padding: 0 2rem;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+}
+
+.fruit__back:hover,
+.fruit__back:active {
+    background-color: white;
+    color: #555;
+}
+
+.fruit__name {
+    background: linear-gradient(to right, #67b26f, #4ca2cd);
+    padding: 1.75rem 1rem;
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-size: 3.25rem;
+    color: white;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+.fruit__details {
+    background-color: #eee;
+    padding: 4rem 6rem;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.75rem;
+}
+
+.fruit__description {
+    padding: 5rem 6rem;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.fruit__link:link,
+.fruit__link:visited {
+    display: block;
+    background-color: #5aaa9d;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.fruit__link:hover,
+.fruit__link:active {
+    background-color: #67b26f;
+}
+
+.fruit__source {
+    padding: 0 6rem 3rem;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.fruit__source a:link,
+.fruit__source a:visited {
+    color: #999;
+}
+
+.fruit__source a:hover,
+.fruit__source a:active {
+    color: #555;
+}
+
+.emoji-left {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.emoji-right {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
