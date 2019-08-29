@@ -193,7 +193,7 @@ input[type="submit"]:active {
 
 header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/anise-aroma-art-277253\ \(1\).jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/anise-aroma-art-277253\ \(1\).jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/anise-aroma-art-277253\ \(1\)-min.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -216,6 +216,7 @@ header {
     float: left;
 }
 
+/* Main navigation*/
 .main-nav {
     float: right;
     margin-top: 74px;
@@ -241,6 +242,45 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+
+/* Mobile navigation */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* Sticky navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0 2px 2px #cca6a6;
+            box-shadow: 0 2px 2px #cca6a6;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 27.7px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 17.5px 0;
+    color: #555;
+}
+
+.sticky .logo {
+    margin-top: 0;
+    height: 70px;
 }
 
 /* ------------------------------------*/
@@ -377,8 +417,8 @@ header {
 /* ------------------------------------*/
 
 .section-testimonials {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/asia-plate.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/asia-plate.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url('img/asia-plate-min.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/asia-plate-min.jpg');
     background-size: cover;
     color: white;
     position: center;
@@ -578,5 +618,25 @@ footer p {
     text-align: center;
     font-size: 90%;
     margin-top: 30px;
+}
+
+/* Animations */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-1.animate,
+.js--wp-2.animate,
+.js--wp-3.animate {
+    opacity: 1;
 }
 

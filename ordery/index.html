@@ -5,39 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ordery</title>
+
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">    
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
 <body>
     <header>
         <nav>
             <div class="row">
                 <img src="resources/img/logo-4.png" alt="Ordery logo" class="logo" />
-                <ul class="main-nav">
+                <ul class="main-nav js--main-nav">
                     <li><a href="#features">Food delivery</a></li>
                     <li><a href="#works">How it works</a></li>
                     <li><a href="#cities">Our cities</a></li>
                     <li><a href="#plans">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon "><i class="ion-navicon-round js--nav-icon"></i></a>
             </div>
         </nav>
         <div class="image-text-box">
             <h1>Order food, make your life happier!</h1>
-            <a class="btn btn-full" href="#features">I need tasty food</a>
-            <a class="btn btn-ghost" href="#features">Show me more</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I need tasty food</a>
+            <a class="btn btn-ghost js--scroll-to-features" href="#">Show me more</a>
         </div>
     </header>
 
-    <section class="section-features" id="features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Order food &mdash; hurry up </h2>
             <p class="about">We are Ordery, we start our food delivery business in 2010 and since then we are here to make your stomach happy every day with fresh cooked meals!</p>
         </div> 
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="ion-android-sunny icon-big"></i>
                 <h3>Loyalty card</h3>
@@ -65,44 +79,44 @@
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/family-menu.jpg" />
+                    <img src="resources/img/family-menu-min.jpg" />
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/baked-salmon.jpg" alt="Sushi plate" />
+                    <img src="resources/img/baked-salmon-min.jpg" alt="Sushi plate" />
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/sushi-round-plate.jpg" alt="Sushi round plate" />
+                    <img src="resources/img/sushi-round-plate-min.jpg" alt="Sushi round plate" />
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/green-plate.jpg" alt="Green plate" />
+                    <img src="resources/img/green-plate-min.jpg" alt="Green plate" />
                 </figure>
             </li>
         </ul>
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/mayonese-potato.jpg" alt="Mayonese potato" />
+                    <img src="resources/img/mayonese-potato-min.jpg" alt="Mayonese potato" />
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/vegetables.jpg" alt="Stuffed peppers" />
+                    <img src="resources/img/vegetables-min.jpg" alt="Stuffed peppers" />
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/meat-vegetables-plate.jpg" alt="Salmon meal" />
+                    <img src="resources/img/meat-vegetables-plate-min.jpg" alt="Salmon meal" />
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/noudles-bowl.jpg" alt="Noudles bowl" />
+                    <img src="resources/img/noudles-bowl-min.jpg" alt="Noudles bowl" />
                 </figure>
             </li>
         </ul>
@@ -114,8 +128,8 @@
         </div>
         <div class="row">
             <div class="col span-1-of-2">
-                <img src="resources/img/mockup/photo-laptop-front.png" class="app-screen" alt="Ordery website" />
-                <img src="resources/img/mockup/mobile-front.png" class="app-screen" alt="Ordery mobile app" />
+                <img src="resources/img/mockup/photo-laptop-front.png" class="app-screen js--wp-2" alt="Ordery website" />
+                <img src="resources/img/mockup/mobile-front.png" class="app-screen js--wp-2" alt="Ordery mobile app" />
             </div>
             <div class="col span-1-of-2">
                 <div class="box-steps">
@@ -136,7 +150,7 @@
         </div>
     </section>
 
-    <section class="section-cities" id="cities">
+    <section class="section-cities js--wp-3" id="cities">
             <div class="row">
                     <h2 class="cities">Our delivery service is located in these cities</h2>
             </div>
@@ -234,13 +248,13 @@
         </div>
     </section>
 
-    <section class="section-plans" id="plans">
+    <section class="section-plans js--section-plans" id="plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">€300 <span>/ month</span></p>
@@ -389,5 +403,9 @@
             </p>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
 </html>
